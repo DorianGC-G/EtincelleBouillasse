@@ -1,0 +1,2 @@
+class Biographie < ApplicationRecord
+end

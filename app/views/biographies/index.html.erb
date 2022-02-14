@@ -1,0 +1,4 @@
+<% @biographies.each do |biographie| %>
+  <h2><%= link_to biographie.name, biography_path(biographie) %></h2>
+  <span><%= biographie.title %></span>
+<% end %>
