@@ -6,6 +6,12 @@ Rails.application.routes.draw do
   get "spectacles", to: "spectacles#index"
   get "spectacles/:id", to: "spectacles#show"
 
-  get 'biographies', to: 'biographies#index'
+  get 'la-compagnie', to: 'biographies#index'
   get 'biographies/:id', to: 'biographies#show'
+
+  #Pages statiques
+  get 'apprendre', to: 'pages#apprendre'
+  get 'contact', to: 'pages#contact'
+  get 'calendrier', to: 'pages#calendrier'
+  get 'home', to: 'pages#home'
 end
