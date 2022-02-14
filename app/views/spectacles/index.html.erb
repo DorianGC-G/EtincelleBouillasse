@@ -1,0 +1,5 @@
+<% @spectacles.each do |spectacle| %>
+  <h2><%= link_to spectacle.title, spectacle_path(spectacle) %></h2>
+  <span><%= spectacle.public %> - <%= spectacle.length %> min</span>
+  <p><%= spectacle.description %></p>
+<% end %>
