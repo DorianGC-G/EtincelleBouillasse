@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   #Pages statiques
   get 'apprendre', to: 'pages#apprendre'
   get 'contact', to: 'pages#contact'
-  get 'calendrier', to: 'pages#calendrier'
-  get 'home', to: 'pages#home'
+  get 'calendrier', to: 'events#index'
+  get 'accueil', to: 'pages#home'
 end
