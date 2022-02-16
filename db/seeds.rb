@@ -1,4 +1,9 @@
 puts "Creating spectacles"
+
+Spectacle.destroy_all
+Biographie.destroy_all
+Event.destroy_all
+
 spectacle1 = Spectacle.create!(
   title: "CONTRE TOUT CONTRE",
   public: "Tout public",

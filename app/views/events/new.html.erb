@@ -1,0 +1,24 @@
+<%= form_for @event do |f| %>
+  <%= f.label "Nom de l'évènement" %>:
+  <%= f.text_field :title %><br />
+
+  <%= f.label "Localisation" %>:
+  <%= f.text_field :location %><br />
+
+  <%= f.label "Date" %>:
+  <%= f.date_field :date %><br />
+
+  <%= f.label "Type de public" %>:
+  <%= f.text_field :public %><br />
+
+  <%= f.label "Lien vers l'affiche" %>:
+  <%= f.text_field :poster_url %><br />
+
+  <%= f.label "Lien pour réserver en ligne" %>:
+  <%= f.text_field :reservation_link %><br />
+
+  <%= f.label "Description de l'événement" %>:
+  <%= f.text_area :description %><br />
+
+  <%= f.submit "Créer l'évènement" %>
+<% end %>
