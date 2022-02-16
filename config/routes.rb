@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :spectacles, only: [:index, :show]
   resources :biographies, only: [:index, :show]
   resources :events, only: [:index, :new, :create, :destroy]
