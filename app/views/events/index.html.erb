@@ -1,6 +1,7 @@
+<h2>Calendrier spectacles / stages</h2>
 <% @events.each do |event| %>
-  <h2><%= event.title %></h2>
+  <h3><%= event.title %></h3>
   <% if current_user %>
     <%= link_to "Supprimer", event_path(event), data: { turbo_method: :delete } %>
   <% end %>
-<% end %>
+<% end %> 
