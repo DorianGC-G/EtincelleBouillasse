@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, path_names: {sign_in: 'connexion'}
   resources :spectacles, only: [:index, :show]
   resources :biographies, only: [:index, :show]
   resources :events, only: [:index, :new, :create, :destroy]
