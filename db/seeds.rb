@@ -14,6 +14,35 @@ spectacle1 = Spectacle.create!(
   tech_file: "http://www.etincellebouillasse.fr/wp-content/uploads/2019/08/dossier-contre-complet.pdf",
 )
 
+spectacle2 = Spectacle.create!(
+  title: "LA GRANDE LESSIVE!",
+  public: "Tout public",
+  length: 45,
+  poster: "http://www.etincellebouillasse.fr/wp-content/uploads/2018/03/affiche.jpg",
+  description: "C’est le jour de la grande lessive pour Pipa. Elle a apporté tout son linge sale au lavomatique, et comme toujours pour ce clown facétieux, c’est l’occasion de jouer avec les vêtements, la lessive…et l’eau!… Raoul, lui, n’a qu’un tout petit mouchoir à laver et la machine est occupée. Par la ruse, l’autorité, la séduction il va tout tenter pour récupérer l’appareil.",
+  full_description: "C'est le jour de la Grande Lessive pour Pipa. Elle a apporté tout son linge sale
+  au lavomatique!Et comme toujours pour Pipa, c'est une occasion de jouer avec
+  les vêtements, la lessive et l'eau !...
+  Raoul, lui, n'a qu'un petit mouchoir à laver et la machine est occupée. Par la
+  ruse, la séduction, l'autorité il va tout tenter pour pouvoir utiliser l'appareil. Ce
+  sera pour lui l'occasion de découvrir l'importance du costume et du regard de
+  l'autre...
+  Mais c'est long une tournée de linge ! Ca laisse le temps à l'imagination de
+  vagabonder entre les robes et les écharpes !... Les vêtements dansent, se
+  transforment et c'est un voyage immobile qui s'organise dans cette laverie..",
+  tech_file: "http://www.etincellebouillasse.fr/wp-content/uploads/2020/07/la-grande-lessive-dossier-de-pr%C3%A9sentation.pdf",
+)
+
+spectacle3 = Spectacle.create!(
+  title: "EDDY CHANDELEUR (ET SA MAMAN)",
+  public: "Tout public",
+  length: 75,
+  poster: "http://www.etincellebouillasse.fr/wp-content/uploads/2017/10/affiche-eddy.jpg",
+  description: "Moi, Jacqueline Dutilleul, je suis très fière de vous présenter mon fils: »EDDY CHANDELEUR » qui commence sa grande tournée internationale comme chanteur. Pour le moment il n’a pas encore eu d’engagements mais je suis sûre que son talent, ainsi que sa présence hypnotique le conduiront rapidement au devant de la scène.",
+  full_description: "Moi, Jacqueline Dutilleul, je suis très fière de vous présenter mon fils: »EDDY CHANDELEUR » qui commence sa grande tournée internationale comme chanteur. Pour le moment il n’a pas encore eu d’engagements mais je suis sûre que son talent, ainsi que sa présence hypnotique le conduiront rapidement au devant de la scène. Modestement, je l’accompagne comme agent, habilleuse, danseuse et même éventuellement choriste. Par ailleurs, je veille à ce qu’il interprète un répertoire FRANCOPHONE connu et apprécié de tous tel que les jolies chansons de Madame Berthe Sylva ou de Monsieur Ray Ventura. mais ce sacripan ne voit que par les américains (comme ce vaurien d’Elvis Presley) ou des anglais dont le nom m’échappe!….C’est donc un tour de chant varié, émaillé de quelques conflits de générations que nous risquons de vous proposer….",
+  tech_file: "http://www.etincellebouillasse.fr/wp-content/uploads/2017/10/dossier-pr%C3%A9sentation-Eddy-Chandeleur.pdf",
+)
+
 clown1 = Biographie.create!(
   name: "Olivier Guitel",
   clown_name: "Raoul Nitrate",

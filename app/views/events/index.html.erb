@@ -4,4 +4,6 @@
   <% if current_user %>
     <%= link_to "Supprimer", event_path(event), data: { turbo_method: :delete } %>
   <% end %>
-<% end %> 
+<% end %>
+<br/><br/>
+<%= link_to "Créer un nouvel évènement", new_event_path if current_user %></li>

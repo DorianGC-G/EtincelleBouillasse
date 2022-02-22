@@ -1,0 +1,47 @@
+.spectacles-wrapper {
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.spectacle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 750px;
+  margin: 15px 0px; 
+  img {
+    max-height: 400px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 15px;
+    height: 100%;
+    h3 {
+      margin-bottom: 10px;
+    }
+    .spectacle-info {
+      font-weight: bold;
+    }
+    .short-description {
+      margin: 10px 0px;
+    }
+    a {
+      text-align: end;
+      text-decoration: underline;
+    }
+  }
+  .decoration {
+    width: 780px;
+    height: 250px;
+    position: absolute;
+    top: 80px;
+    right: -10px;
+    z-index: -1;
+    border: 1px solid #2B2D42;
+    border-radius: 4px;
+  }
+}

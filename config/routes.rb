@@ -12,8 +12,8 @@ Rails.application.routes.draw do
   get 'la-compagnie', to: 'biographies#index'
   get 'biographies/:id', to: 'biographies#show'
 
-  get 'calendrier', to: 'events#index'
-  get 'calendrier/nouveau', to: 'events#new'
+  get 'agenda', to: 'events#index'
+  get 'agenda/nouveau', to: 'events#new'
   post 'events', to: 'events#create'
   delete "events/:id", to: "events#destroy"
 

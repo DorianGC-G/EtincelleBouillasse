@@ -1,0 +1,12 @@
+<div class='spectacle-container'>
+  <div class='image'>
+    <img src="<%= spectacle.poster %>" id='affiche'>
+  </div>
+  <div class='content'>
+    <h3><%= spectacle.title %></h3>
+    <span class='spectacle-info'><%= spectacle.public %> - <%= spectacle.length %> min</span>
+    <p class='short-description'><%= spectacle.description %></p>
+    <%= link_to 'En savoir plus', spectacle.tech_file, html_options={ target: :blank } %>
+  </div>
+  <div class="decoration"></div>
+</div>
