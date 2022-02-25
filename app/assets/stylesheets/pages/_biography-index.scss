@@ -1,0 +1,17 @@
+.biographies-wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  .clown-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  h2 {
+    margin: 5px 0px;
+  }
+  .presentation {
+    margin-bottom: 15px;
+  }
+}

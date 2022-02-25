@@ -1,0 +1,9 @@
+<%= link_to biography_path(biographie) do %>
+  <div class="clown-card-container">
+    <div class="clown-thumb">
+      <img src=<%= biographie.poster %>>
+    </div>
+    <h3><%= biographie.name %></h3>
+    <span><%= biographie.clown_name %></span>
+  </div>
+<% end %>

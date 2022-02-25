@@ -1,6 +1,6 @@
 <div class='spectacle-container'>
   <div class='image'>
-    <img src="<%= spectacle.poster %>" id='affiche'>
+    <img src="<%= spectacle.poster.present? ? spectacle.poster : image_url("placeholder.jpeg") %>" id='affiche'>
   </div>
   <div class='content'>
     <h3><%= spectacle.title %></h3>
