@@ -1,9 +1,13 @@
-<h2>Calendrier spectacles / stages</h2>
-<% @events.each do |event| %>
-  <h3><%= event.title %></h3>
+<div class="wrapper-main">
+  <h2>Agenda spectacles et stages</h2>
+  <span class="subtitle">Retrouvez ici tous nos prochains événements !</span>
   <% if current_user %>
-    <%= link_to "Supprimer", event_path(event), data: { turbo_method: :delete } %>
+    <%= link_to "Créer un nouvel évènement", (new_event_path), class: :button, id: :new_event %>
   <% end %>
-<% end %>
-<br/><br/>
-<%= link_to "Créer un nouvel évènement", new_event_path if current_user %></li>
+  <div class='events-wrapper'> 
+    <% @events.each do |event| %>
+      <%= render "shared/event", event: event%>
+    <% end %>
+  </div>
+</div>
+

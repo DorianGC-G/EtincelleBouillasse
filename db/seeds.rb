@@ -159,4 +159,60 @@ clown7 = Biographie.create!(
   title: "",
   poster: "https://res.cloudinary.com/doriang/image/upload/v1645798621/Etincelle/Thumbs/thumb-figaro_aygkzu.jpg"
 )
-puts "Done"
+puts "done"
+
+puts "creating events"
+
+event1 = Event.create!(
+  location: "Ferme Théâtre Chapiteau",
+  public: "15 ans et +",
+  length: 240,
+  title: "Stage de clown",
+  description: "Pour bien commencer l'année, voici le premier stage découverte pour se familiariser avec l'univers du clown. Une journée pour se planter, manquer, rater... Mais avec panache!",
+  date: DateTime.parse("27/02/2022"),
+  price: "50€"
+)
+
+event2 = Event.create!(
+  location: "Ferme Théâtre Chapiteau",
+  public: "12 ans et +",
+  length: 52,
+  title: "Il n'y a pas de problème avec les femmes...",
+  description: "A partir des théories les plus improbables sur les femmes, deux clownes enfourchent leur balais de sorcières pour démonter ces idées fumeuses et partir à la recherche de ces femmes absentes de l'Histoire.",
+  date: DateTime.parse("05/02/2022"),
+  price: "12€ plein tarif, 8€ tarif réduit"
+)
+
+event3 = Event.create!(
+  location: "Moulin de Louviers",
+  public: "Tout public",
+  length: 60,
+  title: "Concert (un peu) burlesque",
+  description: "Sale journée pour Jacqueline. En qualité de présidente de l'association \"Les amis de la Culture\", elle a organisé un concert mais le piano n'a pas été livré. Les catastrophes n'arrivant jamais seules, ce n'est pas UN mais DEUX concertistes qu'elle a convoqués...",
+  date: DateTime.parse("18/02/2022"),
+  price: "Gratuit sur réservation"
+)
+
+event4 = Event.create!(
+  location: "Espace Philippe Auguste (Vernon)",
+  public: "Tout public",
+  length: 50,
+  title: "Contre tout contre",
+  description: "Madame Coco fait sa séance de gymnastique lorsqu’elle s’aperçoit que le public est là. Toujours digne bien que vaguement ridicule elle tente de sauver la face. Flop, sorte de Labrador humain, erre en espérant rencontrer quelqu’un, quitte à s’inventer un ami imaginaire… Et tout à coup, c’est la rencontre!",
+  date: DateTime.parse("27/02/2022"),
+  reservation_link: "https://enkiea.fr/epa/evenements.html",
+  price: "15€"
+)
+
+event5 = Event.create!(
+  location: "Ferme Théâtre Chapiteau",
+  public: "Tout public",
+  length: 65,
+  title: "Les petits noyaux / En scène",
+  description: "Deux spectacles pour le prix d'un ! Les petits noyaux: la responsable \"HS\" nous présente sa collection de noyaux de cerise, formant une métaphore sociétale. Elle questionne la notion de pouvoir, de hiérarchie, le fonctionnement de notre société... / En scène: Lino Z a monté un numéro de puce savante, mais la bestiole est facétieuse et la partie est loin d'être gagnée...",
+  date: DateTime.parse("13/03/2022"),
+  reservation_link: "https://enkiea.fr/epa/evenements.html",
+  price: "12€ plein tarif, 8€ tarif réduit, 35€ pass famille (4 places)"
+)
+
+puts "done"

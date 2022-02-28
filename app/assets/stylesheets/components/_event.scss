@@ -1,4 +1,4 @@
-.spectacle-container {
+.event-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,15 +17,20 @@
     h3 {
       margin-bottom: 10px;
     }
-    .spectacle-info {
+    .event-info {
       font-weight: bold;
     }
     .short-description {
       margin: 10px 0px;
     }
-    a {
-      text-align: end;
-      text-decoration: underline;
+    .event-links {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      a {
+        text-align: end;
+        text-decoration: underline;
+      }
     }
   }
   .decoration {

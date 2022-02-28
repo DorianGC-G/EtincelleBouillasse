@@ -6,9 +6,6 @@
   background-color: #8D99AE;
 }
 .nav-container {
-  h1 {
-    font-size: 50px;
-  }
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +21,7 @@
   justify-content: flex-end;
   align-items: center;
 }
-.nav-button {
+.button {
   display: inline;
   padding: 5px 10px;
   margin: 0px 5px;
