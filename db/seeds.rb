@@ -159,6 +159,20 @@ clown7 = Biographie.create!(
   title: "",
   poster: "https://res.cloudinary.com/doriang/image/upload/v1645798621/Etincelle/Thumbs/thumb-figaro_aygkzu.jpg"
 )
+
+clown8 = Biographie.create!(
+  name: "Noëlle Bardeau",
+  biography: "Issue d’une formation classique et titulaire du diplôme d’état, elle enseigne au conservatoire de région de Caen puis comme professeure titulaire au conservatoire d’Hérouville Saint Clair. Musicienne enseignante, elle poursuit sa carrière pianistique par des récitals et de la musique de chambre. Soucieuse de partager la musique avec le plus grand nombre et de préférence avec les publics « empêchés », elle multiplie les créations interdisciplinaires avec les compagnies de danse et de théâtre.",
+  title: "",
+  poster: "https://res.cloudinary.com/doriang/image/upload/v1646061722/Etincelle/Thumbs/thumb-noelle_ro746l.jpg"
+)
+
+clown9 = Biographie.create!(
+  name: "Clément Prioul",
+  biography: "Pianiste, organiste et arrangeur, il a commencé ses études musicales a l’école de musique de Limay, puis au conservatoire de Cergy Pontoise où il a obtenu un DEM Jazz en 2012 pour terminer avec un double cursus au centre des musiques Didier LOCKWOOD, sous la direction de Dave LIEBMAN. Il a collaboré en tant que professeur d’harmonie  et arrangeur pour l’OBOMANIA ACADEMY au côté de Jean-Luc FILLON son ancien professeur. Il participe à plusieurs formations en France et à l’étranger et a enregistré plusieurs albums.",
+  title: "",
+  poster: "https://res.cloudinary.com/doriang/image/upload/v1646061722/Etincelle/Thumbs/thumb-clement_tkcsiz.jpg"
+)
 puts "done"
 
 puts "creating events"

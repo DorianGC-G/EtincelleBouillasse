@@ -1,5 +1,9 @@
-<div class="biography-container">
-  <h2><%= @biographie.name %> / <%= @biographie.clown_name %></h2>
-  <p><%= @biographie.biography %></p>
-  <img src="<%= @biographie.poster %>">
+<div class="wrapper-main">
+  <div class="biography-content">
+    <h2><%= @biographie.name %> <%= @biographie.clown_name? ? "/ #{@biographie.clown_name}" : "" %></h2>
+    <p><%= @biographie.biography %></p>
+  </div>
+  <div class="gallery">
+    <img src="<%= @biographie.poster %>">
+  </div>
 </div>

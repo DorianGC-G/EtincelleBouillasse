@@ -1,4 +1,7 @@
-<h1><%= @spectacle.title %></h1>
-<%= link_to "Dossier complet (PDF)", @spectacle.tech_file, target: "_blank" %>
-
-<p><%= @spectacle.full_description %></p>
+<div class="wrapper-main">
+  <div class="titles">
+    <h2><%= @spectacle.title %></h1>
+    <%= link_to "Dossier complet (PDF)", @spectacle.tech_file, target: "_blank" %>
+  </div>
+  <p><%= @spectacle.full_description %></p>
+</div>

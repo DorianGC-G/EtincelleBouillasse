@@ -6,7 +6,7 @@
     <h3><%= spectacle.title %></h3>
     <span class='spectacle-info'><%= spectacle.public %> - <%= spectacle.length %> min</span>
     <p class='short-description'><%= spectacle.description %></p>
-    <%= link_to 'En savoir plus', spectacle.tech_file, html_options={ target: :blank } %>
+    <%= link_to 'En savoir plus', spectacle_path(spectacle) %>
   </div>
   <div class="decoration"></div>
 </div>
