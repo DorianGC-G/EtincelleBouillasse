@@ -4,13 +4,16 @@
   </div>
   <div class='content'>
     <h3><%= event.title %></h3>
-    <span class='event-info'><%= event.public %> - <%= event.length %> min</span>
+    <span class='event-info'><%= event.public %> - <%= event.length %> min - <%= event.location %></span>
     <p class='short-description'><%= event.description %></p>
     <div class="event-links">
-      <% if current_user %>
-        <%= link_to "Supprimer", event_path(event), data: { turbo_method: :delete }, class: :button %>
-      <% end %>
-      <%= link_to 'Réserver', event.reservation_link.present? ? event.reservation_link : contact_path, html_options={ target: :blank } %>
+      <span><b>Tarif: <%= event.price %></b></span>
+      <div class="clickable">
+        <% if current_user %>
+          <%= link_to "Supprimer", event_path(event), data: { turbo_method: :delete }, class: :button %>
+        <% end %>
+        <%= link_to 'Réserver', event.reservation_link.present? ? event.reservation_link : contact_path, html_options={ target: :blank } %>
+      </div>
     </div>
   </div>
   <div class="decoration"></div>

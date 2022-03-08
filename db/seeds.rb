@@ -226,7 +226,7 @@ event5 = Event.create!(
   description: "Deux spectacles pour le prix d'un ! Les petits noyaux: la responsable \"HS\" nous présente sa collection de noyaux de cerise, formant une métaphore sociétale. Elle questionne la notion de pouvoir, de hiérarchie, le fonctionnement de notre société... / En scène: Lino Z a monté un numéro de puce savante, mais la bestiole est facétieuse et la partie est loin d'être gagnée...",
   date: DateTime.parse("13/03/2022"),
   reservation_link: "https://enkiea.fr/epa/evenements.html",
-  price: "12€ plein tarif, 8€ tarif réduit, 35€ pass famille (4 places)"
+  price: "12€ plein tarif, 8€ tarif réduit, 35€ pass famille"
 )
 
 puts "done"
