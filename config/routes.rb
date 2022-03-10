@@ -21,4 +21,5 @@ Rails.application.routes.draw do
   get 'apprendre', to: 'pages#apprendre'
   get 'contact', to: 'pages#contact'
   get 'accueil', to: 'pages#home'
+  get 'legal', to: 'pages#legal'
 end

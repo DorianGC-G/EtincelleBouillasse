@@ -1,17 +1,24 @@
-<div class='wrapper-main'>
-  <h2>Spectacles</h2>
-  <div class='spectacles-wrapper'>  
-    <% @spectacles.each do |spectacle| %>
-      <%= render 'shared/spectacle', spectacle: spectacle %>
-    <% end %>
+<div class='wrapper-main' id="creations-page">
+  <div class="creations-nav">
+    <h3 class="spectacles-nav-tab active" id="spectacles-nav">Spectacles</h3>
+    <h3 class="spectacles-nav-tab" id="deambulations-nav">Déambulations</h3>
+    <h3 class="spectacles-nav-tab" id="sketches-nav">Sketches "à la carte"</h3>
   </div>
-  <h2>Déambulations</h2>
-  <p>
-    La compagnie Etincelle Bouillasse peut rassembler pour ses différentes déambulations jusqu'à 16 artistes professionnels. Les spectacles déambulatoires, ludiques et interactifs, se composent d’une galerie de personnages adaptables à la nature de votre manifestation et au budget artistique dont vous disposez. A vous de choisir le nombre d’artistes et la technicité de chacun d’entre eux : Échassiers, acrobates, cracheurs de feu, jongleurs, plasticiens, maquilleurs, sculpteurs de ballons, musiciens, comédiens...
-  </p>
-
-  <h3>Sketches "à la carte"</h3>
-  <p>
-    Étincelle Bouillasse crée des interventions thématiques sur mesure pour les entreprises,  associations ou d’autres structures. le clown a cette posture  particulière qui permet au public à la fois de s’identifier au sujet  traité, et de rire de ses propres travers: présentés ici de façon  caricaturale et outrancière.Une manière insolite et humoristique de  rendre le thème d’une réunion captivant ou encore de lancer un débat.
-  </p>
+  <div class="creations-content">
+    <div class='spectacles-content-wrapper active' id="spectacles-wrapper">  
+      <% @spectacles.each do |spectacle| %>
+        <%= render 'shared/spectacle', spectacle: spectacle %>
+      <% end %>
+    </div>
+    <div class='spectacles-content-wrapper' id="deambulations-wrapper">
+      <p>
+        La compagnie Etincelle Bouillasse peut rassembler pour ses différentes déambulations jusqu'à 16 artistes professionnels. Les spectacles déambulatoires, ludiques et interactifs, se composent d’une galerie de personnages adaptables à la nature de votre manifestation et au budget artistique dont vous disposez. A vous de choisir le nombre d’artistes et la technicité de chacun d’entre eux : Échassiers, acrobates, cracheurs de feu, jongleurs, plasticiens, maquilleurs, sculpteurs de ballons, musiciens, comédiens...
+      </p>
+    </div>
+    <div class='spectacles-content-wrapper' id="sketches-wrapper">
+      <p>
+        Étincelle Bouillasse crée des interventions thématiques sur mesure pour les entreprises,  associations ou d’autres structures. le clown a cette posture  particulière qui permet au public à la fois de s’identifier au sujet  traité, et de rire de ses propres travers: présentés ici de façon  caricaturale et outrancière.Une manière insolite et humoristique de  rendre le thème d’une réunion captivant ou encore de lancer un débat.
+      </p>
+    </div>
+  </div>
 </div>

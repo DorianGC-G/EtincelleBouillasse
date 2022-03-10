@@ -1,0 +1,32 @@
+.footer {
+  display: block;
+  width: 100%;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  background: #15141A;
+  color: white;
+  height: 75px;
+  width: 100%;
+  padding: 15px;
+  h4, span {
+    color: white;
+  }
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+.links {
+  ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    li {
+      margin: 0px 10px 0px 0px;
+      text-decoration: underline;
+    }
+  }
+}

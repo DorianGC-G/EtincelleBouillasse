@@ -1,6 +1,25 @@
-.spectacles-wrapper {
+.spectacles-content-wrapper {
   max-width: 1500px;
+  display: none;
+  &.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.spectacles-nav-tab {
+  color: #8D99AE;
+  cursor: pointer;
+  &.active {
+    color: #2B2D42;
+    text-decoration: underline;
+  }
+}
+.creations-nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 15px;
+  align-self: flex-start;
+  h3 {
+    margin: 0px 8px;
+  }
 }
