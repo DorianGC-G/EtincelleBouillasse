@@ -1,4 +1,3 @@
-
 const spectacles = document.getElementById("spectacles-nav")
 const spectaclesWrapper = document.getElementById("spectacles-wrapper")
 const deambulations = document.getElementById("deambulations-nav")
@@ -14,6 +13,7 @@ spectacles.addEventListener("click", event => {
   sketches.classList.remove("active")
   sketchesWrapper.classList.remove("active")
 })
+
 deambulations.addEventListener("click", event => {
   spectacles.classList.remove("active")
   spectaclesWrapper.classList.remove("active")
@@ -22,6 +22,7 @@ deambulations.addEventListener("click", event => {
   sketches.classList.remove("active")
   sketchesWrapper.classList.remove("active")
 })
+
 sketches.addEventListener("click", event => {
   spectacles.classList.remove("active")
   spectaclesWrapper.classList.remove("active")
