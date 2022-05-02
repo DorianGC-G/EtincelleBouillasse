@@ -17,6 +17,9 @@
 
   <div class="clown-cards-wrapper">
     <h2>Biographies</h2>
+    <% if current_user %>
+      <%= link_to "Créer un nouveau clown", (new_biography_path), class: :button, id: :new_biographie %>
+    <% end %>
     <div class="clown-cards-container">
     <% @biographies.each do |biographie| %>
       <%= render "clown_card", biographie: biographie%>
