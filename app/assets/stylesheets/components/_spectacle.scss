@@ -4,9 +4,16 @@
   align-items: center;
   position: relative;
   width: 1000px;
-  margin: 15px 0px; 
+  margin: 20px 0px; 
   img {
     max-height: 400px;
+  }
+  .clickable {
+    text-align: end;
+    color: #EDF2F4;
+    position: absolute;
+    bottom: 25px;
+    right: 0px;
   }
   .content {
     display: flex;
@@ -23,10 +30,6 @@
     .short-description {
       margin: 10px 0px;
     }
-    a {
-      text-align: end;
-      text-decoration: underline;
-    }
   }
   .decoration {
     width: 1020px;
@@ -35,7 +38,8 @@
     top: 80px;
     right: 0px;
     z-index: -1;
-    border: 1px solid #2B2D42;
+    border: 1px solid #df27c0;
+    box-shadow: 1px 1px 10px #df27c0;
     border-radius: 4px;
   }
 }

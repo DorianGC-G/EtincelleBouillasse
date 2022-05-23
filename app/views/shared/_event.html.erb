@@ -12,7 +12,7 @@
         <% if current_user %>
           <%= link_to "Supprimer", event_path(event), data: { turbo_method: :delete }, class: :button %>
         <% end %>
-        <%= link_to 'Réserver', event.reservation_link.present? ? event.reservation_link : contact_path, html_options={ target: :blank } %>
+        <%= link_to 'Réserver', event.reservation_link.present? ? event.reservation_link : contact_path, html_options={ target: "blank" , class: :button} %>
       </div>
     </div>
   </div>

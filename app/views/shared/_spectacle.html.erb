@@ -6,7 +6,12 @@
     <h3><%= spectacle.title %></h3>
     <span class='spectacle-info'><%= spectacle.public %> - <%= spectacle.length %> min</span>
     <p class='short-description'><%= spectacle.description %></p>
-    <%= link_to 'En savoir plus', spectacle_path(spectacle) %>
   </div>
   <div class="decoration"></div>
+  <div class="clickable">
+    <% if current_user %>
+      <%= link_to "Supprimer", spectacle_path(spectacle), data: { turbo_method: :delete }, class: :button %>
+    <% end %>
+    <%= link_to 'En savoir plus', spectacle_path(spectacle), class: :button %>
+  </div>
 </div>

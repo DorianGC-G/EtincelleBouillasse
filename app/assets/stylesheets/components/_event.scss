@@ -4,7 +4,7 @@
   align-items: center;
   position: relative;
   width: 1000px;
-  margin: 15px 0px; 
+  margin: 20px 0px;
   img {
     max-height: 400px;
   }
@@ -29,7 +29,12 @@
       align-items: center;
       a {
         text-align: end;
-        text-decoration: underline;
+        color: #EDF2F4;
+        text-align: end;
+        color: #EDF2F4;
+        position: absolute;
+        bottom: 25px;
+        right: 0px;
       }
     }
   }
@@ -40,7 +45,7 @@
     top: 80px;
     right: 0px;
     z-index: -1;
-    border: 1px solid #2B2D42;
+    box-shadow: 1px 1px 10px #df27c0;
     border-radius: 4px;
   }
 }

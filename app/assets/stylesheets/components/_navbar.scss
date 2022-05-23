@@ -5,7 +5,7 @@
   z-index: 2;
   justify-content: center;
   height: 70px;
-  background-color: #8D99AE;
+  background-color: #221920;
 }
 .nav-container {
   display: flex;
@@ -27,11 +27,12 @@
   display: inline;
   padding: 5px 10px;
   margin: 0px 5px;
-  border: 1px solid #2B2D42;
+  border: 1px solid #df27c0;
   border-radius: 3px;
+  color: #EDF2F4;
   &:hover {
-    color: #EDF2F4;
-    background-color: #D90429;
+    background-color: #df27c0;
+    box-shadow: 1px 1px 10px #df27c0;
     transition: 0.2s;
   }
 }
