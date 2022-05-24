@@ -30,6 +30,9 @@ gem "jbuilder"
 # Authentication
 gem 'devise'
 
+# Images management
+gem "cloudinary"
+
 # .env setup for cloudinary
 gem "dotenv-rails", groups: [:development, :test]
 
