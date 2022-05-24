@@ -30,7 +30,7 @@ h2, h3, h4, h5 {
 }
 
 h1 {
-  font-family: "Ostrich";
+  font-family: "Steelfish";
   text-shadow: 1px 1px 10px var(--lightPurple), 0px 0px 20px var(--lightPurple), 0px 0px 30px var(--purple), 0px 0px 50px var(--darkPurple);
   color: var(--white);
   font-size: 55px;
@@ -38,6 +38,7 @@ h1 {
 
 h2 {
   font-size: 45px;
+  text-shadow: 1px 1px 10px var(--lightPurple), 0px 0px 20px var(--lightPurple), 0px 0px 30px var(--purple), 0px 0px 50px var(--darkPurple)
 }
 
 h3 {
