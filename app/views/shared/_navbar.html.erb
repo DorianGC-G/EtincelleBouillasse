@@ -5,11 +5,11 @@
       <%= link_to root_path do %><li class="button">Accueil</li><% end %>
       <%= link_to biographies_path do %><li class="button">La compagnie</li><% end %>
       <%= link_to agenda_path do %><li class="button">Agenda</li><% end %>
-      <%= link_to spectacles_path, data: { turbo_method: :reload } do %><li class="button" id="creations-button">Créations</li><% end %>
+      <%= link_to spectacles_path do %><li class="button" id="creations-button">Créations</li><% end %>
       <%= link_to apprendre_path do %><li class="button">Apprendre</li><% end %>
       <%= link_to contact_path do %><li class="button">Contact</li><% end %>
       <% if current_user %>
-        <%= link_to root_path, destroy_user_session_path, data: { turbo_method: :delete } do %><li class="button">Déconnexion</li><% end %>
+        <%= link_to destroy_user_session_path, data: { turbo_method: :delete } do %><li class="button">Déconnexion</li><% end %>
       <% end %>
     </ul>
   </div>

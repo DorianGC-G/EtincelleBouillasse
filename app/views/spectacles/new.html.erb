@@ -1,3 +1,5 @@
-<%= form_for @spectacle do |f| %>
-  <%= f.submit "Créer un nouveau spectacle" %>
-<% end %>
+<div class="wrapper-main">
+  <%= form_with model: @spectacle do |f| %>
+    <%= f.submit "Créer un nouveau spectacle" %>
+  <% end %>
+</div>

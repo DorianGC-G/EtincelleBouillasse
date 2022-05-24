@@ -1,24 +1,33 @@
-<%= form_for @event do |f| %>
-  <%= f.label "Nom de l'évènement" %>:
-  <%= f.text_field :title %><br />
+<div class="wrapper-main">
+  <h2>Créer un nouvel évènement</h2>
+  <%= form_with model: @event do |f| %>
+    <%= f.label "Nom de l'évènement :" %><br>
+    <%= f.text_field :title, required: true %><br /><br />
 
-  <%= f.label "Localisation" %>:
-  <%= f.text_field :location %><br />
+    <%= f.label "Date :" %><br />
+    <%= f.date_field :date, required: true %><br /><br />
 
-  <%= f.label "Date" %>:
-  <%= f.date_field :date %><br />
+    <%= f.label "Type de public :" %><br />
+    <%= f.text_field :public, required: true %><br /><br />
 
-  <%= f.label "Type de public" %>:
-  <%= f.text_field :public %><br />
+    <%= f.label "Durée :" %><br />
+    <%= f.text_field :length, required: true %><br /><br />
 
-  <%= f.label "Lien vers l'affiche" %>:
-  <%= f.text_field :poster_url %><br />
+    <%= f.label "Localisation :" %><br />
+    <%= f.text_field :location, required: true %><br /><br />
 
-  <%= f.label "Lien pour réserver en ligne" %>:
-  <%= f.text_field :reservation_link %><br />
+    <%= f.label "Tarif :" %><br />
+    <%= f.text_field :price %><br /><br />
 
-  <%= f.label "Description de l'événement" %>:
-  <%= f.text_area :description %><br />
+    <%= f.label "Lien vers l'affiche :" %><br />
+    <%= f.text_field :poster_url %><br /><br />
 
-  <%= f.submit "Créer l'évènement" %>
-<% end %>
+    <%= f.label "Lien pour réserver en ligne :" %><br />
+    <%= f.text_field :reservation_link %><br /><br />
+
+    <%= f.label "Description de l'événement :" %><br />
+    <%= f.text_area :description, size: "80x5", required: true, minlength: 80, maxlength: 350 %><br /><br />
+
+    <%= f.submit "Publier l'évènement" %>
+  <% end %>
+</div>

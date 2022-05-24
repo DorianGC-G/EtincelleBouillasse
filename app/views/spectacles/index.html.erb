@@ -5,10 +5,10 @@
     <h3 class="spectacles-nav-tab" data-spectacle-nav-target="sketchTab" data-action="click->spectacle-nav#sketchActive">Sketches "à la carte"</h3>
   </div>
   <div class="creations-content">
-    <% if current_user %>
-      <%= link_to "Créer un nouveau spectacle", (new_spectacle_path), class: :button, id: :new_spectacle %>
-    <% end %>
     <div class='spectacles-content-wrapper active' data-spectacle-nav-target="spectacleWrapper">  
+      <% if current_user %>
+        <%= link_to "Créer un nouveau spectacle", (new_spectacle_path), class: :button, id: :new_spectacle %>
+      <% end %>
       <% @spectacles.each do |spectacle| %>
         <%= render 'shared/spectacle', spectacle: spectacle %>
       <% end %>

@@ -23,19 +23,17 @@
     .short-description {
       margin: 10px 0px;
     }
+    .clickable {
+      text-align: end;
+      color: #EDF2F4;
+      position: absolute;
+      bottom: 25px;
+      right: 0px;
+    }
     .event-links {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      a {
-        text-align: end;
-        color: #EDF2F4;
-        text-align: end;
-        color: #EDF2F4;
-        position: absolute;
-        bottom: 25px;
-        right: 0px;
-      }
     }
   }
   .decoration {
