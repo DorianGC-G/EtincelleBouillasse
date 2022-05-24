@@ -10,8 +10,9 @@
 .spectacles-nav-tab {
   color: #dd67c9;
   cursor: pointer;
+  transition: 0.2s;
   &.active {
-    color: #df27c0;
+    color: var(--purple);
     text-decoration: underline ;
   }
 }

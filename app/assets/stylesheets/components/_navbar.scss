@@ -27,12 +27,15 @@
   display: inline;
   padding: 5px 10px;
   margin: 0px 5px;
-  border: 1px solid #df27c0;
+  border: 1px solid var(--purple);
   border-radius: 3px;
-  color: #EDF2F4;
+  color: var(--white);
+  &.active {
+    box-shadow: 0px 0px 5px var(--lightPurple), 0px 0px 10px var(--purple), 0px 0px 15px var(--darkPurple);
+    transition: 0.2s;
+  }
   &:hover {
-    background-color: #df27c0;
-    box-shadow: 1px 1px 10px #df27c0;
+    box-shadow: 0px 0px 5px var(--lightPurple), 0px 0px 10px var(--purple), 0px 0px 15px var(--darkPurple);
     transition: 0.2s;
   }
 }

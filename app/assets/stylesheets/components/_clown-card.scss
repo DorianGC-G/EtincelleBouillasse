@@ -10,12 +10,12 @@
   border-radius: 4px;
   &:hover {
     h3, span {
-      color: #EDF2F4;
-      text-shadow: 1px 1px 10px #df27c0;
+      color: var(--white);
+      text-shadow: 1px 1px 5px var(--lightPurple), 1px 1px 20px var(--purple), 1px 1px 30px var(--darkPurple);
       transition: 0.2s;
     }
     .clown-thumb {
-      box-shadow: 1px 1px 10px #df27c0;
+      box-shadow: 1px 1px 5px var(--lightPurple), 1px 1px 20px var(--purple), 1px 1px 30px var(--darkPurple);
       transition: 0.2s;
     }
   }

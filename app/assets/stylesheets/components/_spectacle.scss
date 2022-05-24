@@ -38,8 +38,9 @@
     top: 80px;
     right: 0px;
     z-index: -1;
-    border: 1px solid #df27c0;
-    box-shadow: 1px 1px 10px #df27c0;
+    border: 1px solid var(--lightPurple);
+    box-shadow: 0px 0px 5px var(--lightPurple), 0px 0px 10px var(--purple), 0px 0px 20px var(--darkPurple);
+    background: var(--purpleGrey);
     border-radius: 4px;
   }
 }
