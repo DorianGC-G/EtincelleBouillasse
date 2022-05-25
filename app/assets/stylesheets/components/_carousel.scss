@@ -1,6 +1,5 @@
 .carousel {
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 100vw;
 }
 
 ul.slides {
@@ -32,19 +31,22 @@ ul.slides input {
 }
 
 .slide-image {
-  display: block;
+  display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
+  bottom: 0;
   opacity: 0;
+  background-size: cover;
+  background-position: center;
   transition: all .7s ease-in-out;
-}   
+}
 
 .slide-image img {
   width: auto;
   min-width: 100%;
-  height: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .carousel-controls {
@@ -52,7 +54,7 @@ ul.slides input {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 5;
   font-size: 100px;
   line-height: 600px;
   color: #fff;
@@ -89,21 +91,20 @@ ul.slides input {
 
 .carousel-dots {
   position: absolute;
-  left: 0;
-  right: 0;
+  right: 20px;
   bottom: 20px;
-  z-index: 999;
+  z-index: 10;
   text-align: center;
 }
 
 .carousel-dots .carousel-dot {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.5;
-  margin: 10px;
+  margin: 2px;
 }
 
 input:checked + .slide-container .slide-image {
@@ -122,7 +123,7 @@ input#img-3:checked ~ .carousel-dots label#img-dot-3,
 input#img-4:checked ~ .carousel-dots label#img-dot-4,
 input#img-5:checked ~ .carousel-dots label#img-dot-5,
 input#img-6:checked ~ .carousel-dots label#img-dot-6 {
-opacity: 1;
+  opacity: 1;
 }
 
 
