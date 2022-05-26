@@ -1,11 +1,13 @@
 <div class="navbar-wrapper">
   <div class="nav-container">
-    <div id="neon-sign">
-      <h1 id='main-title'>ETINCELLE BOUILLASS<span id="broken-neon">E</span></h1>
-      <div class="spark spark-1"></div>
-      <div class="spark spark-2"></div>
-      <div class="spark spark-3"></div>
-    </div>
+    <%= link_to root_path do %>
+      <div id="neon-sign">
+        <h1 id='main-title'>ETINCELLE BOUILLASS<span id="broken-neon">E</span></h1>
+        <div class="spark spark-1"></div>
+        <div class="spark spark-2"></div>
+        <div class="spark spark-3"></div>
+      </div>
+    <% end %>
     
     <ul class="nav-buttons">
       <%= link_to root_path do %><li class="button <%=is_active('pages', 'home')%>">Accueil</li><% end %>

@@ -14,7 +14,6 @@ export default class extends Controller {
     ]
     setInterval(() => {
       imgTargets[imgNum].checked = true
-      console.log(imgTargets.length, imgNum)
       imgNum < (imgTargets.length - 1) ? imgNum += 1 : imgNum = 0
     }, 5000)
   }
