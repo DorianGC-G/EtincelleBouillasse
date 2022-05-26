@@ -1,6 +1,12 @@
 <div class="navbar-wrapper">
   <div class="nav-container">
-    <h1 id='main-title'>ETINCELLE BOUILLASSE</h1>
+    <div id="neon-sign">
+      <h1 id='main-title'>ETINCELLE BOUILLASS<span id="broken-neon">E</span></h1>
+      <div class="spark spark-1"></div>
+      <div class="spark spark-2"></div>
+      <div class="spark spark-3"></div>
+    </div>
+    
     <ul class="nav-buttons">
       <%= link_to root_path do %><li class="button <%=is_active('pages', 'home')%>">Accueil</li><% end %>
       <%= link_to biographies_path do %><li class="button <%=is_active('biographies', 'index')%>">La compagnie</li><% end %>

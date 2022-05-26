@@ -18,6 +18,7 @@
   --purpleGrey: #463546;
   --darkPurpleGrey: #332733;
   --white: #ffeffc;
+  --neonEffect: 1px 1px 10px var(--lightPurple), 0px 0px 20px var(--lightPurple), 0px 0px 30px var(--purple), 0px 0px 50px var(--darkPurple);
 }
 
 body {
@@ -29,16 +30,9 @@ h2, h3, h4, h5 {
   color: var(--white);
 }
 
-h1 {
-  font-family: "Steelfish";
-  text-shadow: 1px 1px 10px var(--lightPurple), 0px 0px 20px var(--lightPurple), 0px 0px 30px var(--purple), 0px 0px 50px var(--darkPurple);
-  color: var(--white);
-  font-size: 55px;
-}
-
 h2 {
   font-size: 45px;
-  text-shadow: 1px 1px 10px var(--lightPurple), 0px 0px 20px var(--lightPurple), 0px 0px 30px var(--purple), 0px 0px 50px var(--darkPurple)
+  text-shadow: var(--neonEffect);
 }
 
 h3 {
