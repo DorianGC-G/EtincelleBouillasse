@@ -1,5 +1,30 @@
 <div class="wrapper-main">
+  <h2>CRÉER UN NOUVEAU SPECTACLE</h2>
   <%= form_with model: @spectacle do |f| %>
+    <%= f.label "Nom du spectacle :" %><br>
+    <%= f.text_field :title, required: true %><br /><br />
+
+    <%= f.label "Type de public :" %><br />
+    <%= f.text_field :public, required: true %><br /><br />
+
+    <%= f.label "Durée :" %><br />
+    <%= f.text_field :length, required: true %><br /><br />
+
+    <%= f.label "Lien vers l'affiche :" %><br />
+    <%= f.url_field :poster %><br /><br />
+
+    <%= f.label "Lien vers le PDF du spectacle: " %><br />
+    <%= f.url_field :tech_file, required: true %><br /><br />
+
+    <%= f.label "Description courte du spectacle (max 350 caractères):" %><br />
+    <%= f.text_area :description, size: "80x5", required: true, minlength: 80, maxlength: 350 %><br /><br />
+
+    <%= f.label "Description complète (celle qui apparaîtra sur la page du spectacle) :" %><br />
+    <%= f.rich_text_area :full_description %><br /><br />
+
+
+
+    <%= f.submit "Publier l'évènement" %>
     <%= f.submit "Créer un nouveau spectacle" %>
   <% end %>
 </div>

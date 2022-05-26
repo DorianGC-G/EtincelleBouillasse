@@ -1,3 +1,19 @@
-<%= form_for @biographie do |f| %>
-  <%= f.submit "Créer un nouveau clown" %>
-<% end %>
+<div class="wrapper-main">
+  <h2>CRÉER UNE NOUVELLE BIOGRAPHIE</h2>
+  <%= form_with model: @biographie do |f| %>
+
+    <%= f.label "Nom d'humain :" %><br>
+    <%= f.text_field :name, required: true %><br /><br />
+
+    <%= f.label "Nom de clown :" %><br />
+    <%= f.text_field :clown_name  %><br /><br />
+
+    <%= f.label "Lien vers la photo principale (format carré obligatoire) :" %><br />
+    <%= f.text_field :poster, required: true %><br /><br />
+
+    <%= f.label "Biographie" %>
+    <%= f.rich_text_area :biography %>
+
+    <%= f.submit "Créer un nouveau clown" %>
+  <% end %>
+</div>
