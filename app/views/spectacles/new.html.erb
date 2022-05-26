@@ -1,16 +1,16 @@
-<div class="wrapper-main">
+<div class="wrapper-main" data-controller="gallery-input">
   <h2>CRÉER UN NOUVEAU SPECTACLE</h2>
   <%= form_with model: @spectacle do |f| %>
-    <%= f.label "Nom du spectacle :" %><br>
+    <%= f.label "Nom du spectacle:" %><br>
     <%= f.text_field :title, required: true %><br /><br />
 
-    <%= f.label "Type de public :" %><br />
+    <%= f.label "Type de public:" %><br />
     <%= f.text_field :public, required: true %><br /><br />
 
-    <%= f.label "Durée :" %><br />
+    <%= f.label "Durée:" %><br />
     <%= f.text_field :length, required: true %><br /><br />
 
-    <%= f.label "Lien vers l'affiche :" %><br />
+    <%= f.label "Lien vers l'affiche:" %><br />
     <%= f.url_field :poster %><br /><br />
 
     <%= f.label "Lien vers le PDF du spectacle: " %><br />
@@ -20,11 +20,15 @@
     <%= f.text_area :description, size: "80x5", required: true, minlength: 80, maxlength: 350 %><br /><br />
 
     <%= f.label "Description complète (celle qui apparaîtra sur la page du spectacle) :" %><br />
-    <%= f.rich_text_area :full_description %><br /><br />
+    <%= f.rich_text_area :full_description, class: "trix-content-edit" %><br /><br />
 
+    <%= f.label "Liens vers les images:"%><br />
+    <%= f.fields_for :gallery do |g| %>
+      <%= f.label "Image 1:" %><br />
+      <%= g.text_field "image_1" %><br /><br />
+      <a class="button" data-gallery-input-target="btn" data-action="click->gallery-input#addSpectacleImageInput">Ajouter une image</a><br /><br />
+    <% end %>
 
-
-    <%= f.submit "Publier l'évènement" %>
-    <%= f.submit "Créer un nouveau spectacle" %>
+    <%= f.submit "Créer un nouveau spectacle", class: "trix-button" %>
   <% end %>
 </div>

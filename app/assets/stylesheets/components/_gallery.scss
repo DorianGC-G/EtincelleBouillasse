@@ -1,4 +1,9 @@
 .gallery {
-  display: grid;
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin-top: 30px;
+  img {
+    margin: 10px;
+  }
 }

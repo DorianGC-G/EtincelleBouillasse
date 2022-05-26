@@ -4,6 +4,8 @@
     <p><%= @biographie.biography %></p>
   </div>
   <div class="gallery">
-    <img src="<%= @biographie.poster %>">
+    <% @biographie.gallery.each do |image| %>
+      <img src=<%= image %>>
+    <% end %>
   </div>
 </div>

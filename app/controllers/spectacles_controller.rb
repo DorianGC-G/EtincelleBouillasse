@@ -13,6 +13,7 @@ class SpectaclesController < ApplicationController
 
   def create
     @spectacle = Spectacle.new(spectacle_params)
+    @spectacle.gallery = gallery()
     @spectacle.save
     redirect_to spectacles_path
   end
@@ -26,6 +27,12 @@ class SpectaclesController < ApplicationController
   private
 
   def spectacle_params
-    params.require(:spectacle).permit()
+    params.require(:spectacle).permit(:title, :public, :length, :poster, :tech_file, :description, :full_description)
+  end
+
+  def gallery
+    gallery = []
+    params[:spectacle][:gallery].each {|key, value| gallery << value }
+    return gallery
   end
 end

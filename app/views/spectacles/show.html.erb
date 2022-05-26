@@ -3,5 +3,10 @@
     <h2><%= @spectacle.title %></h1>
     <%= link_to "Dossier complet (PDF)", @spectacle.tech_file, target: "_blank", class: :button %>
   </div>
-  <p><%= @spectacle.full_description %></p>
+  <%= @spectacle.full_description %>
+  <div class="gallery">
+    <% @spectacle.gallery.each do |image| %>
+      <img src=<%= image %>>
+    <% end %>
+  </div>
 </div>

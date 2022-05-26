@@ -1,4 +1,4 @@
-<div class="wrapper-main">
+<div class="wrapper-main" data-controller="gallery-input">
   <h2>CRÉER UNE NOUVELLE BIOGRAPHIE</h2>
   <%= form_with model: @biographie do |f| %>
 
@@ -11,9 +11,16 @@
     <%= f.label "Lien vers la photo principale (format carré obligatoire) :" %><br />
     <%= f.text_field :poster, required: true %><br /><br />
 
-    <%= f.label "Biographie" %>
-    <%= f.rich_text_area :biography %>
+    <%= f.label "Biographie:" %><br />
+    <%= f.rich_text_area :biography, class: "trix-content-edit" %><br /><br />
 
-    <%= f.submit "Créer un nouveau clown" %>
+    <%= f.label "Liens vers les images:"%><br />
+    <%= f.fields_for :gallery do |g| %>
+      <%= f.label "Image 1:" %><br />
+      <%= g.text_field "image_1" %><br />
+      <br /><a class="button" data-gallery-input-target="btn" data-action="click->gallery-input#addBiographyImageInput">Ajouter une image</a><br /><br />
+    <% end %>
+
+    <%= f.submit "Créer un nouveau clown", class: "trix-button" %>
   <% end %>
 </div>
