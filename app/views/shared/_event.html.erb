@@ -4,7 +4,7 @@
   </div>
   <div class='content'>
     <h3><%= event.title %></h3>
-    <span class='event-info'><%= event.public %> - <%= event.length %> min - <%= event.location %></span>
+    <span class='event-info'><%= event.public %> - <%= event.length %> min - <%= event.location %> - <%= event.date.to_date.strftime("%d/%m/%Y") %></span>
     <p class='short-description'><%= event.description %></p>
     <div class="event-links">
       <span><b>Tarif: <%= event.price %></b></span>
