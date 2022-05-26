@@ -1,5 +1,14 @@
 .carousel {
   width: 100vw;
+  position: relative;
+  h2 {
+    text-align: center;
+    text-shadow: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+  }
 }
 
 ul.slides {
@@ -40,13 +49,6 @@ ul.slides input {
   background-size: cover;
   background-position: center;
   transition: all .7s ease-in-out;
-}
-
-.slide-image img {
-  width: auto;
-  min-width: 100%;
-  height: auto;
-  object-fit: cover;
 }
 
 .carousel-controls {

@@ -1,7 +1,7 @@
 <div>
-  <div class="carousel">
+  <div class="carousel" data-controller="carousel">
     <ul class="slides">
-      <input type="radio" name="radio-buttons" id="img-1" checked />
+      <input type="radio" name="radio-buttons" id="img-1" data-carousel-target="img1" checked />
       <li class="slide-container">
         <div class="slide-image" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.9443978274903712) 0%, rgba(0,0,0,0.6586835417760855) 52%, rgba(0,0,0,0) 100%), url('https://res.cloudinary.com/doriang/image/upload/v1653485877/Etincelle/Home%20Carousel/2_lapynh.jpg')">
         </div>
@@ -14,7 +14,7 @@
           </label>
         </div>
       </li>
-      <input type="radio" name="radio-buttons" id="img-2" />
+      <input type="radio" name="radio-buttons" id="img-2" data-carousel-target="img2" />
       <li class="slide-container">
         <div class="slide-image" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.9443978274903712) 0%, rgba(0,0,0,0.6586835417760855) 52%, rgba(0,0,0,0) 100%), url('https://res.cloudinary.com/doriang/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1653485877/Etincelle/Home%20Carousel/4_ofnztm.jpg')">
         </div>
@@ -27,7 +27,7 @@
           </label>
         </div>
       </li>
-      <input type="radio" name="radio-buttons" id="img-3" />
+      <input type="radio" name="radio-buttons" id="img-3" data-carousel-target="img3" />
       <li class="slide-container">
         <div class="slide-image" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.9443978274903712) 0%, rgba(0,0,0,0.6586835417760855) 52%, rgba(0,0,0,0) 100%), url('https://res.cloudinary.com/doriang/image/upload/v1653485877/Etincelle/Home%20Carousel/3_dzixqj.jpg')">
         </div>
@@ -40,7 +40,7 @@
           </label>
         </div>
       </li>
-      <input type="radio" name="radio-buttons" id="img-4" />
+      <input type="radio" name="radio-buttons" id="img-4" data-carousel-target="img4" />
       <li class="slide-container">
         <div class="slide-image" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.9443978274903712) 0%, rgba(0,0,0,0.6586835417760855) 52%, rgba(0,0,0,0) 100%), url('https://res.cloudinary.com/doriang/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1653485877/Etincelle/Home%20Carousel/6_ixtxkl.jpg')">
         </div>
@@ -53,7 +53,7 @@
           </label>
         </div>
       </li>
-      <input type="radio" name="radio-buttons" id="img-5" />
+      <input type="radio" name="radio-buttons" id="img-5" data-carousel-target="img5" />
       <li class="slide-container">
         <div class="slide-image" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.9443978274903712) 0%, rgba(0,0,0,0.6586835417760855) 52%, rgba(0,0,0,0) 100%), url('https://res.cloudinary.com/doriang/image/upload/v1653485877/Etincelle/Home%20Carousel/5_vuuxzk.jpg')">
         </div>
@@ -74,5 +74,6 @@
         <label for="img-5" class="carousel-dot" id="img-dot-5"></label>
       </div>
     </ul>
+    <h2 id="home-title"><%= title.html_safe %></h2>
   </div>
 </div>
