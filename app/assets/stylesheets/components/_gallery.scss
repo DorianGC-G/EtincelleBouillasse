@@ -1,9 +1,11 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   max-width: 1500px;
-  margin-top: 30px;
+  margin: 30px 20px;
   img {
     margin: 10px;
+    max-width: 100vw;
   }
 }

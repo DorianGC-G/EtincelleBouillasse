@@ -27,6 +27,11 @@
     li {
       margin: 0px 10px 0px 0px;
       text-decoration: underline;
+      @media screen and (max-width: 730px) {
+        a {
+          font-size: 10px;
+        }
+      }
     }
   }
 }

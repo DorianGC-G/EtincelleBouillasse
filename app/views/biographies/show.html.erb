@@ -1,7 +1,10 @@
 <div class="wrapper-main">
   <div class="biography-content">
     <h2><%= @biographie.name %> <%= @biographie.clown_name? ? "/ #{@biographie.clown_name}" : "" %></h2>
-    <p><%= @biographie.biography %></p>
+    <%= link_to "supprimer", biography_path(@biographie), data: { turbo_method: :delete }, class: :button %>
+    <div class="main-content">
+      <%= @biographie.biography %>
+    </div>
   </div>
   <div class="gallery">
     <% @biographie.gallery.each do |image| %>

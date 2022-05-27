@@ -1,4 +1,4 @@
-<div class="navbar-wrapper">
+<div class="navbar-wrapper" data-controller="burger">
   <div class="nav-container">
     <%= link_to root_path do %>
       <div id="neon-sign">
@@ -9,7 +9,11 @@
       </div>
     <% end %>
     
-    <ul class="nav-buttons">
+    <div class="menu btn1" data-menu="1" data-burger-target="button" data-action="click->burger#openMenu">
+      <div class="icon-left"></div>
+      <div class="icon-right"></div>
+    </div>
+    <ul class="nav-buttons" data-burger-target="menu">
       <%= link_to root_path do %><li class="button <%=is_active('pages', 'home')%>">Accueil</li><% end %>
       <%= link_to biographies_path do %><li class="button <%=is_active('biographies', 'index')%>">La compagnie</li><% end %>
       <%= link_to agenda_path do %><li class="button <%=is_active('events', 'index')%>">Agenda</li><% end %>
