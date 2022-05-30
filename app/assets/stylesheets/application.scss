@@ -34,7 +34,7 @@ h2, h3, h4, h5 {
 h2 {
   font-size: 45px;
   text-shadow: var(--neonEffect);
-  margin: 25px 0px;
+  margin: 25px 15px;
   text-align: center;
 }
 
@@ -53,6 +53,7 @@ p {
 }
 .main-content {
   margin: 30px 20px;
+  text-align: left;
 }
 
 a, a:hover, a:focus, a:active {
