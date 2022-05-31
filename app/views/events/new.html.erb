@@ -1,32 +1,38 @@
-<div class="wrapper-main">
+<div class="wrapper-main" data-controller="forms">
   <h2>CRÉER UN NOUVEL ÉVÈNEMENT</h2>
   <%= form_with model: @event do |f| %>
     <%= f.label "Nom de l'évènement :" %><br>
-    <%= f.text_field :title, required: true %><br /><br />
+    <%= f.text_field :title, required: true %><br><br>
 
-    <%= f.label "Date :" %><br />
-    <%= f.date_field :date, required: true %><br /><br />
+    <%= f.label "Date :" %><br>
+    <%= f.date_field :date, required: true %><br><br>
 
-    <%= f.label "Type de public :" %><br />
-    <%= f.text_field :public, required: true %><br /><br />
+    <%= f.label "Type de public :" %><br>
+    <%= f.text_field :public, required: true %><br><br>
 
-    <%= f.label "Durée :" %><br />
-    <%= f.text_field :length, required: true %><br /><br />
+    <%= f.label "Durée :" %><br>
+    <%= f.text_field :length, required: true %><br><br>
 
-    <%= f.label "Lieu :" %><br />
-    <%= f.text_field :location, required: true %><br /><br />
 
-    <%= f.label "Tarif :" %><br />
-    <%= f.text_field :price %><br /><br />
+    <%= f.label "Lieu :" %><br>
+    <%= f.label "Lommoye" %>
+    <%= f.radio_button :at_home, true, "data-forms-target" => 'atHomeRadio', "data-action" => "click->forms#displayLocationInput"  %><br><br>
+    <%= f.label "Ailleurs" %>
+    <%= f.radio_button :at_home, false, "data-forms-target" => 'atHomeRadio', "data-action" => "click->forms#displayLocationInput" %><br><br>
+    <div data-forms-target="otherLocationInput">
+    </div>
 
-    <%= f.label "Lien vers l'affiche :" %><br />
-    <%= f.text_field :poster %><br /><br />
+    <%= f.label "Tarif :" %><br>
+    <%= f.text_field :price, required: true %><br><br>
 
-    <%= f.label "Lien pour réserver en ligne :" %><br />
-    <%= f.text_field :reservation_link %><br /><br />
+    <%= f.label "Lien vers l'affiche :" %><br>
+    <%= f.text_field :poster %><br><br>
 
-    <%= f.label "Description de l'événement (max 350 caractères):" %><br />
-    <%= f.text_area :description, size: "80x5", required: true, minlength: 80, maxlength: 350 %><br /><br />
+    <%= f.label "Lien pour réserver en ligne :" %><br>
+    <%= f.text_field :reservation_link %><br><br>
+
+    <%= f.label "Description de l'événement (max 350 caractères):" %><br>
+    <%= f.text_area :description, size: "80x5", required: true, minlength: 80, maxlength: 350 %><br><br>
 
     <%= f.submit "Publier l'évènement" %>
   <% end %>

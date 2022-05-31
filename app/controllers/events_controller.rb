@@ -1,6 +1,8 @@
 class EventsController < ApplicationController
   def index
-    @events = Event.all.reverse
+    events = Event.all.reverse
+    @local_events = events.select{|e| e.at_home}
+    @outside_events = events.select{|e| !e.at_home}
   end
 
   def new
@@ -9,6 +11,7 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(event_params)
+    @event.location = "Ferme Théâtre Chapiteau" if @event.at_home
     @event.save
     redirect_to events_path
   end
@@ -22,6 +25,6 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    params.require(:event).permit(:title, :location, :public, :length, :description, :poster_url, :date, :reservation_link)
+    params.require(:event).permit(:title, :location, :public, :length, :description, :poster_url, :date, :reservation_link, :at_home)
   end
 end

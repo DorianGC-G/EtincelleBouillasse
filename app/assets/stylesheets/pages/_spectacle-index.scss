@@ -7,7 +7,7 @@
     align-items: center;
   }
 }
-.spectacles-nav-tab {
+.nav-tab {
   color: #dd67c9;
   cursor: pointer;
   transition: 0.2s;
@@ -16,7 +16,7 @@
     color: var(--white);
   }
 }
-.creations-nav {
+.nav-tabs {
   display: flex;
   margin: 30px 0px;
   h3 {

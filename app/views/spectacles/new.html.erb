@@ -1,4 +1,4 @@
-<div class="wrapper-main" data-controller="gallery-input">
+<div class="wrapper-main" data-controller="forms">
   <h2>CRÉER UN NOUVEAU SPECTACLE</h2>
   <%= form_with model: @spectacle do |f| %>
     <%= f.label "Nom du spectacle:" %><br>
@@ -26,7 +26,7 @@
     <%= f.fields_for :gallery do |g| %>
       <%= f.label "Image 1:" %><br />
       <%= g.text_field "image_1" %><br /><br />
-      <a class="button" data-gallery-input-target="btn" data-action="click->gallery-input#addSpectacleImageInput">Ajouter une image</a><br /><br />
+      <a class="button" data-forms-target="btn" data-action="click->forms#addSpectacleImageInput">Ajouter une image</a><br /><br />
     <% end %>
 
     <%= f.submit "Créer un nouveau spectacle", class: "trix-button" %>

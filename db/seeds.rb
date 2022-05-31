@@ -184,7 +184,8 @@ event1 = Event.create!(
   title: "Stage de clown",
   description: "Pour bien commencer l'année, voici le premier stage découverte pour se familiariser avec l'univers du clown. Une journée pour se planter, manquer, rater... Mais avec panache!",
   date: DateTime.parse("27/02/2022"),
-  price: "50€"
+  price: "50€",
+  at_home: true
 )
 
 event2 = Event.create!(
@@ -194,7 +195,8 @@ event2 = Event.create!(
   title: "Il n'y a pas de problème avec les femmes...",
   description: "A partir des théories les plus improbables sur les femmes, deux clownes enfourchent leur balais de sorcières pour démonter ces idées fumeuses et partir à la recherche de ces femmes absentes de l'Histoire.",
   date: DateTime.parse("05/02/2022"),
-  price: "12€ plein tarif, 8€ tarif réduit"
+  price: "12€ plein tarif, 8€ tarif réduit",
+  at_home: true
 )
 
 event3 = Event.create!(
@@ -204,7 +206,8 @@ event3 = Event.create!(
   title: "Concert (un peu) burlesque",
   description: "Sale journée pour Jacqueline. En qualité de présidente de l'association \"Les amis de la Culture\", elle a organisé un concert mais le piano n'a pas été livré. Les catastrophes n'arrivant jamais seules, ce n'est pas UN mais DEUX concertistes qu'elle a convoqués...",
   date: DateTime.parse("18/02/2022"),
-  price: "Gratuit sur réservation"
+  price: "Gratuit sur réservation",
+  at_home: false
 )
 
 event4 = Event.create!(
@@ -215,7 +218,8 @@ event4 = Event.create!(
   description: "Madame Coco fait sa séance de gymnastique lorsqu’elle s’aperçoit que le public est là. Toujours digne bien que vaguement ridicule elle tente de sauver la face. Flop, sorte de Labrador humain, erre en espérant rencontrer quelqu’un, quitte à s’inventer un ami imaginaire… Et tout à coup, c’est la rencontre!",
   date: DateTime.parse("27/02/2022"),
   reservation_link: "https://enkiea.fr/epa/evenements.html",
-  price: "15€"
+  price: "15€",
+  at_home: false
 )
 
 event5 = Event.create!(
@@ -226,7 +230,8 @@ event5 = Event.create!(
   description: "Deux spectacles pour le prix d'un ! Les petits noyaux: la responsable \"HS\" nous présente sa collection de noyaux de cerise, formant une métaphore sociétale. Elle questionne la notion de pouvoir, de hiérarchie, le fonctionnement de notre société... / En scène: Lino Z a monté un numéro de puce savante, mais la bestiole est facétieuse et la partie est loin d'être gagnée...",
   date: DateTime.parse("13/03/2022"),
   reservation_link: "https://enkiea.fr/epa/evenements.html",
-  price: "12€ plein tarif, 8€ tarif réduit, 35€ pass famille"
+  price: "12€ plein tarif, 8€ tarif réduit, 35€ pass famille",
+  at_home: true
 )
 
 puts "done"

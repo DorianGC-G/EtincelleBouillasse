@@ -139,6 +139,10 @@
       bottom: 0;
       left: -20px;
     }
+    @media screen and (max-width: 400px) {
+      transform: scale(0.7);
+      left: -40px;
+    }
   }
 }
 
@@ -321,5 +325,11 @@ $color: #b3e5fc;
     display: block;
     transform: scale(0.8);
     top: 1px;
+    right: 10px;
+  }
+  @media screen and (max-width: 450px) {
+    transform: scale(0.6);
+    top: 3px;
+    right: 2px;
   }
 }
