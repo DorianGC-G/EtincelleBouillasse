@@ -23,4 +23,10 @@
     margin: 0px 20px;
     text-align: center;
   }
+  @media screen and (max-width: 1080px) {
+    flex-direction: column;
+    h3 {
+      margin: 20px 15px;
+    }
+  }
 }
