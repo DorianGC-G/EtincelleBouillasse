@@ -6,6 +6,11 @@
   <div class="main-content">
     <%= @spectacle.full_description %>
   </div>
+  <% if @spectacle.video_url %>
+    <div class="embed-video">
+      <iframe width="560" height="315" src="<%= @spectacle.embed_video %>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  <% end %>
   <div class="gallery">
     <% @spectacle.gallery.each do |image| %>
       <img src=<%= image %>>

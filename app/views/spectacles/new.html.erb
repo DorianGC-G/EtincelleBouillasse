@@ -16,6 +16,15 @@
     <%= f.label "Lien vers le PDF du spectacle: " %><br />
     <%= f.url_field :tech_file, required: true %><br /><br />
 
+    <%= f.label "Lien vers le teaser / la vidéo du spectacle: " %><br />
+    <%= f.url_field :video_url %><br /><br />
+
+    <%= f.label "Le spectacle est-il toujours à l'affiche ?" %><br />
+    <%= f.label "A l'affiche" %>
+    <%= f.radio_button :older, false %><br />
+    <%= f.label "Ancien spectacle" %>
+    <%= f.radio_button :older, true %><br /><br />
+
     <%= f.label "Description courte du spectacle (max 350 caractères):" %><br />
     <%= f.text_area :description, size: "80x5", required: true, minlength: 80, maxlength: 350 %><br /><br />
 

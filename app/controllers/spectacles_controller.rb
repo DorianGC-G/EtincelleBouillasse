@@ -1,6 +1,8 @@
 class SpectaclesController < ApplicationController
   def index
-    @spectacles = Spectacle.all
+    spectacles = Spectacle.all
+    @current_spectacles = spectacles.select{ |s| !s.older }
+    @older_spectacles = spectacles.select{ |s| s.older }
   end
 
   def show
@@ -33,6 +35,6 @@ class SpectaclesController < ApplicationController
   def gallery
     gallery = []
     params[:spectacle][:gallery].each {|key, value| gallery << value }
-    return gallery
+    gallery
   end
 end

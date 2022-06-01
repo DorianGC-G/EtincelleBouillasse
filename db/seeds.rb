@@ -12,6 +12,8 @@ spectacle1 = Spectacle.create!(
   description: "Madame Coco fait sa séance de gymnastique lorsqu’elle s’aperçoit que le public est là. Toujours digne bien que vaguement ridicule elle tente de sauver la face. Flop, sorte de Labrador humain, erre en espérant rencontrer quelqu’un, quitte à s’inventer un ami imaginaire….Et tout à coup, c’est la rencontre!",
   full_description: "Madame  Coco fait sa séance de gymnastique lorsqu’elle s’aperçoit que le public  est là. Toujours digne bien que vaguement ridicule elle tente de sauver  la face. Flop, sorte de Labrador humain, erre en espérant rencontrer  quelqu’un, quitte à s’inventer un ami imaginaire….Et tout à coup c’est  la rencontre! Immédiatement séduit il n’a d’yeux que pour elle. Madame  Coco va désespérément tenter de prévenir Flop de la présence du public  de lui faire comprendre que leur intimité devra se partager avec ces  gens qui les regardent. Dans ce même état d’urgence ces deux personnages  vont se regarder, s’apprivoiser, c’est le début d’un poème silencieux  qui se raconte entre eux mais aussi avec le public. Une histoire dansée  de séduction, de répulsion, où la relation se dépeint d’un geste ou d’un  regard. le public, troisième acteur de cette pièce de clown est à la  fois juge, complice, et justification de ce qui s’échange entre ces deux là. Monté en collaboration avec la compagnie LAMADEO 45mn à partir de 3 ans avec David Aubert et Coralie Delaune.",
   tech_file: "http://www.etincellebouillasse.fr/wp-content/uploads/2019/08/dossier-contre-complet.pdf",
+  older: false,
+  video_url: "https://www.youtube.com/watch?v=sbx2qUEbrdY"
 )
 
 spectacle2 = Spectacle.create!(
@@ -31,6 +33,8 @@ spectacle2 = Spectacle.create!(
   vagabonder entre les robes et les écharpes !... Les vêtements dansent, se
   transforment et c'est un voyage immobile qui s'organise dans cette laverie..",
   tech_file: "http://www.etincellebouillasse.fr/wp-content/uploads/2020/07/la-grande-lessive-dossier-de-pr%C3%A9sentation.pdf",
+  older: false,
+  video_url: "https://www.youtube.com/watch?v=SlGSPwvzpBU"
 )
 
 spectacle3 = Spectacle.create!(
@@ -41,6 +45,8 @@ spectacle3 = Spectacle.create!(
   description: "Moi, Jacqueline Dutilleul, je suis très fière de vous présenter mon fils: »EDDY CHANDELEUR » qui commence sa grande tournée internationale comme chanteur. Pour le moment il n’a pas encore eu d’engagements mais je suis sûre que son talent, ainsi que sa présence hypnotique le conduiront rapidement au devant de la scène.",
   full_description: "Moi, Jacqueline Dutilleul, je suis très fière de vous présenter mon fils: »EDDY CHANDELEUR » qui commence sa grande tournée internationale comme chanteur. Pour le moment il n’a pas encore eu d’engagements mais je suis sûre que son talent, ainsi que sa présence hypnotique le conduiront rapidement au devant de la scène. Modestement, je l’accompagne comme agent, habilleuse, danseuse et même éventuellement choriste. Par ailleurs, je veille à ce qu’il interprète un répertoire FRANCOPHONE connu et apprécié de tous tel que les jolies chansons de Madame Berthe Sylva ou de Monsieur Ray Ventura. mais ce sacripan ne voit que par les américains (comme ce vaurien d’Elvis Presley) ou des anglais dont le nom m’échappe!….C’est donc un tour de chant varié, émaillé de quelques conflits de générations que nous risquons de vous proposer….",
   tech_file: "http://www.etincellebouillasse.fr/wp-content/uploads/2017/10/dossier-pr%C3%A9sentation-Eddy-Chandeleur.pdf",
+  older: false,
+  video_url: "https://www.youtube.com/watch?v=Aa_BoDCVzVY"
 )
 
 spectacle4 = Spectacle.create!(
@@ -51,6 +57,7 @@ spectacle4 = Spectacle.create!(
   description: "Madame Coco, célèbre professeur de Musique (et aussi un peu coach en développement personnel), donne une conférence sur l’équilibre et l’harmonie grâce aux mélodies.",
   full_description: "Madame Coco, célèbre professeur de Musique (et aussi un peu coach en développement personnel), donne une conférence sur l’équilibre et l’harmonie grâce aux mélodies. Raoul, le concierge de la salle où elle doit se produire n’a pas été prévenu qu’une intervention avait lieu et n’a qu’une envie : fermer. Avec ou sans son consentement, Madame Coco va profiter de sa présence pour illustrer son propos. Tout est musique, et même Raoul est mélomane!…",
   tech_file: "http://www.etincellebouillasse.fr/wp-content/uploads/2017/04/dossier-presentation-musique.pdf",
+  older: false
 )
 
 spectacle5 = Spectacle.create!(
@@ -61,6 +68,7 @@ spectacle5 = Spectacle.create!(
   description: "Flop vous explique comment sauver la planète: c’est pas compliqué: faut que ça soye propre!…mais il faut aussi cohabiter hors, Pipa Siflore, elle, fraternise avec les ordures.",
   full_description: "Flop vous explique comment sauver la planète: c’est pas compliqué: faut que ça soye propre!…mais il faut aussi cohabiter hors, Pipa Siflore, elle, fraternise avec les ordures. Elle a pour doudou un vieux sac plastique et pas question de le jeter à la poubelle. De cette rencontre autour d’une poubelle va naître une relation musclée, tonitruante, désespérée, et qui sait? Une conscience écologique?!…",
   tech_file: "http://www.etincellebouillasse.fr/wp-content/uploads/2017/04/Dossier-de-pre%C4%97sentation-Propre.pdf",
+  older: false
 )
 
 spectacle6 = Spectacle.create!(
@@ -71,6 +79,7 @@ spectacle6 = Spectacle.create!(
   description: "Raoul Nitrate sème du blé, puis, en attendant que ça pousse, nomme chaque spectateur parrain et marraine d’un grain.",
   full_description: "Raoul Nitrate sème du blé, puis, en attendant que ça pousse, nomme chaque spectateur parrain et marraine d’un grain. Le public devient son champs et partage avec Raoul les inquiétudes, les surprises et les joies d’une année de culture : les intempéries, les limaces, les finances et les contraintes administratives. Le tout en musique et en clowneries!…",
   tech_file: "http://www.etincellebouillasse.fr/wp-content/uploads/2017/04/dossier-presentation-Faut-kca-pousse.pdf",
+  older: false
 )
 
 spectacle7 = Spectacle.create!(
@@ -81,6 +90,7 @@ spectacle7 = Spectacle.create!(
   description: "Le célèbre grand magicien Figaro vous présente son célèbre grand cabaret magique accompagné de son stagiaire dévoué mais maladroit: Raoul.",
   full_description: "Le célèbre grand magicien Figaro vous présente son célèbre grand cabaret magique accompagné de son stagiaire dévoué mais maladroit: Raoul. Si les numéros de Figaro sont bien rodés, les bêtises de Raoul peuvent elles aussi provoquer des surprises!…et quand les objets décident de n’en faire qu’à leurs têtes il faudra des trésors d’habileté aux artistes pour sauver le spectacle!…",
   tech_file: "",
+  older: false
 )
 
 spectacle8 = Spectacle.create!(
@@ -91,6 +101,7 @@ spectacle8 = Spectacle.create!(
   description: "Montez au grenier et découvrez les trésors cachés! Les livres sont des initiations aux voyages imaginaires et aux rêves.",
   full_description: "Montez au grenier et découvrez les trésors cachés! Les livres sont des initiations aux voyages imaginaires et aux rêves. Ce spectacle mêlant livre pop-up géants, théâtre et ombres vous propose de plonger dans les livres et d’embarquer à bord d’une pirogue à côté d’un indien, de flâner dans un château mystérieux ou des chevaliers s’affrontent pour une princesse, ou encore de traverser la jungle pour y découvrir ses animaux sauvages…",
   tech_file: "",
+  older: false
 )
 
 spectacle9 = Spectacle.create!(
@@ -101,6 +112,29 @@ spectacle9 = Spectacle.create!(
   description: "Le duo de jazz acoustique Franck et Juliette, composé de deux musiciens professionnels, propose depuis 2002 un répertoire feutré et coloré.",
   full_description: "Le duo de jazz acoustique Franck et Juliette, composé de deux musiciens professionnels, propose depuis 2002 un répertoire feutré et coloré. Composé d’un violoniste et d’une guitariste, le duo reprend des standards du jazz. Du Jazz Swing (Count Basie Duke Ellington) en passant par le Be-Bop (Charlie Parker, Thélonious Monk) la bossa Nova (Antonio Carlos Jobim) le manouche ou encore des airs de chanson française (Edith Piaf, Georges Brassens, Serge Gainsbourg) « Franck et Juliette » se réapproprie ces standards avec générosité. Avec un répertoire de plus de trois heures, le duo propose ses prestations pour différentes formules: concerts, Vins d’honneurs, cocktails etc…",
   tech_file: "",
+  older: false
+)
+
+spectacle10 = Spectacle.create!(
+  title: "Un spectacle d'un autre temps",
+  public: "Tout public",
+  length: 180,
+  poster: "",
+  description: "Le duo de jazz acoustique Franck et Juliette, composé de deux musiciens professionnels, propose depuis 2002 un répertoire feutré et coloré.",
+  full_description: "Le duo de jazz acoustique Franck et Juliette, composé de deux musiciens professionnels, propose depuis 2002 un répertoire feutré et coloré. Composé d’un violoniste et d’une guitariste, le duo reprend des standards du jazz. Du Jazz Swing (Count Basie Duke Ellington) en passant par le Be-Bop (Charlie Parker, Thélonious Monk) la bossa Nova (Antonio Carlos Jobim) le manouche ou encore des airs de chanson française (Edith Piaf, Georges Brassens, Serge Gainsbourg) « Franck et Juliette » se réapproprie ces standards avec générosité. Avec un répertoire de plus de trois heures, le duo propose ses prestations pour différentes formules: concerts, Vins d’honneurs, cocktails etc…",
+  tech_file: "",
+  older: true
+)
+
+spectacle11 = Spectacle.create!(
+  title: "Un autre vieux spectacle",
+  public: "Tout public",
+  length: 180,
+  poster: "",
+  description: "Le duo de jazz acoustique Franck et Juliette, composé de deux musiciens professionnels, propose depuis 2002 un répertoire feutré et coloré.",
+  full_description: "Le duo de jazz acoustique Franck et Juliette, composé de deux musiciens professionnels, propose depuis 2002 un répertoire feutré et coloré. Composé d’un violoniste et d’une guitariste, le duo reprend des standards du jazz. Du Jazz Swing (Count Basie Duke Ellington) en passant par le Be-Bop (Charlie Parker, Thélonious Monk) la bossa Nova (Antonio Carlos Jobim) le manouche ou encore des airs de chanson française (Edith Piaf, Georges Brassens, Serge Gainsbourg) « Franck et Juliette » se réapproprie ces standards avec générosité. Avec un répertoire de plus de trois heures, le duo propose ses prestations pour différentes formules: concerts, Vins d’honneurs, cocktails etc…",
+  tech_file: "",
+  older: true
 )
 puts "done"
 puts "creating clowns"
