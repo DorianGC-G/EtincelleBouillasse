@@ -1,3 +1,16 @@
-.contact-info {
-  text-align: center;
+.wrapper-main {
+  .contact-info {
+    text-align: center;
+  }
+  .map {
+    margin: 20px 20px;
+    padding: 15px 15px;
+    @media screen and (max-width: 800px) {
+      height: 400px;
+    }
+  }
+  #newsletter {
+    text-align: center;
+    margin: 0px 20px;
+  }
 }
