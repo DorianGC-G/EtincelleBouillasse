@@ -78,7 +78,7 @@ spectacle6 = Spectacle.create!(
   poster: "http://www.etincellebouillasse.fr/wp-content/uploads/2017/04/affiche-faut-k-%C3%A7a-pousse.jpg",
   description: "Raoul Nitrate sème du blé, puis, en attendant que ça pousse, nomme chaque spectateur parrain et marraine d’un grain.",
   full_description: "Raoul Nitrate sème du blé, puis, en attendant que ça pousse, nomme chaque spectateur parrain et marraine d’un grain. Le public devient son champs et partage avec Raoul les inquiétudes, les surprises et les joies d’une année de culture : les intempéries, les limaces, les finances et les contraintes administratives. Le tout en musique et en clowneries!…",
-  tech_file: "http://www.etincellebouillasse.fr/wp-content/uploads/2017/04/dossier-presentation-Faut-kca-pousse.pdf",
+  tech_file: "",
   older: false
 )
 
