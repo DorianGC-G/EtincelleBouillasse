@@ -20,7 +20,7 @@ Spectacle.create!(
   title: "Vie de Grenier",
   public: "Enfants 3 mois à 6 ans",
   length: "20 min",
-  poster: "http://www.etincellebouillasse.fr/wp-content/uploads/2020/04/VieDeGrenier_recto-01.jpg",
+  poster: "https://res.cloudinary.com/doriang/image/upload/v1654681136/Etincelle/Affiches/VieDeGrenier_recto-01_yitko5.jpg",
   description: "Montez au grenier et découvrez les trésors cachés! Les livres sont des initiations aux voyages imaginaires et aux rêves.",
   full_description: "Montez au grenier et découvrez les trésors cachés! Les livres sont des initiations aux voyages imaginaires et aux rêves. Ce spectacle mêlant livre pop-up géants, théâtre et ombres vous propose de plonger dans les livres et d’embarquer à bord d’une pirogue à côté d’un indien, de flâner dans un château mystérieux ou des chevaliers s’affrontent pour une princesse, ou encore de traverser la jungle pour y découvrir ses animaux sauvages…",
   tech_file: "",
@@ -31,10 +31,10 @@ Spectacle.create!(
   title: "Contre tout contre",
   public: "Tout public",
   length: "50 min",
-  poster: "http://www.etincellebouillasse.fr/wp-content/uploads/2019/03/affiche-neutre.jpg",
+  poster: "https://res.cloudinary.com/doriang/image/upload/v1654681135/Etincelle/Affiches/affiche-neutre_rpy9p6.jpg",
   description: "Madame Coco fait sa séance de gymnastique lorsqu’elle s’aperçoit que le public est là. Toujours digne bien que vaguement ridicule elle tente de sauver la face. Flop, sorte de Labrador humain, erre en espérant rencontrer quelqu’un, quitte à s’inventer un ami imaginaire….Et tout à coup, c’est la rencontre!",
   full_description: "Madame  Coco fait sa séance de gymnastique lorsqu’elle s’aperçoit que le public  est là. Toujours digne bien que vaguement ridicule elle tente de sauver  la face. Flop, sorte de Labrador humain, erre en espérant rencontrer  quelqu’un, quitte à s’inventer un ami imaginaire….Et tout à coup c’est  la rencontre! Immédiatement séduit il n’a d’yeux que pour elle. Madame  Coco va désespérément tenter de prévenir Flop de la présence du public  de lui faire comprendre que leur intimité devra se partager avec ces  gens qui les regardent. Dans ce même état d’urgence ces deux personnages  vont se regarder, s’apprivoiser, c’est le début d’un poème silencieux  qui se raconte entre eux mais aussi avec le public. Une histoire dansée  de séduction, de répulsion, où la relation se dépeint d’un geste ou d’un  regard. le public, troisième acteur de cette pièce de clown est à la  fois juge, complice, et justification de ce qui s’échange entre ces deux là. Monté en collaboration avec la compagnie LAMADEO 45mn à partir de 3 ans avec David Aubert et Coralie Delaune.",
-  tech_file: "http://www.etincellebouillasse.fr/wp-content/uploads/2019/08/dossier-contre-complet.pdf",
+  tech_file: "https://res.cloudinary.com/doriang/image/upload/v1654680410/Etincelle/pdf/dossier-contre-complet_zgowab.pdf",
   older: false,
   video_url: "https://www.youtube.com/watch?v=sbx2qUEbrdY"
 )
@@ -43,10 +43,10 @@ Spectacle.create!(
   title: "La grande lessive !",
   public: "Tout public",
   length: "45 min",
-  poster: "http://www.etincellebouillasse.fr/wp-content/uploads/2018/03/affiche.jpg",
+  poster: "https://res.cloudinary.com/doriang/image/upload/v1654681135/Etincelle/Affiches/affiche_pudvjd.jpg",
   description: "C’est le jour de la grande lessive pour Pipa. Elle a apporté tout son linge sale au lavomatique, et comme toujours pour ce clown facétieux, c’est l’occasion de jouer avec les vêtements, la lessive…et l’eau!… Raoul, lui, n’a qu’un tout petit mouchoir à laver et la machine est occupée. Par la ruse, l’autorité, la séduction il va tout tenter pour récupérer l’appareil.",
   full_description: "C'est le jour de la Grande Lessive pour Pipa. Elle a apporté tout son linge sale au lavomatique!Et comme toujours pour Pipa, c'est une occasion de jouer avec les vêtements, la lessive et l'eau !... Raoul, lui, n'a qu'un petit mouchoir à laver et la machine est occupée. Par la ruse, la séduction, l'autorité il va tout tenter pour pouvoir utiliser l'appareil. Ce sera pour lui l'occasion de découvrir l'importance du costume et du regard de l'autre... Mais c'est long une tournée de linge ! Ca laisse le temps à l'imagination de vagabonder entre les robes et les écharpes !... Les vêtements dansent, se transforment et c'est un voyage immobile qui s'organise dans cette laverie..",
-  tech_file: "http://www.etincellebouillasse.fr/wp-content/uploads/2020/07/la-grande-lessive-dossier-de-pr%C3%A9sentation.pdf",
+  tech_file: "https://res.cloudinary.com/doriang/image/upload/v1654680866/Etincelle/pdf/la-grande-lessive-dossier-de-pr%C3%A9sentation_compressed_qaapxc.pdf",
   older: false,
   video_url: "https://www.youtube.com/watch?v=SlGSPwvzpBU"
 )
@@ -55,7 +55,7 @@ Spectacle.create!(
   title: "Le drôle de cabaret (de Raoul et Figaro)",
   public: "Tout public",
   length: "60 min",
-  poster: "http://www.etincellebouillasse.fr/wp-content/uploads/2017/12/19424559_10213532875575063_1520399756809090791_n.jpg",
+  poster: "https://res.cloudinary.com/doriang/image/upload/v1654681136/Etincelle/Affiches/19424559_10213532875575063_1520399756809090791_n_nnlwsr.jpg",
   description: "Le célèbre grand magicien Figaro vous présente son célèbre grand cabaret magique accompagné de son stagiaire dévoué mais maladroit: Raoul.",
   full_description: "Le célèbre grand magicien Figaro vous présente son célèbre grand cabaret magique accompagné de son stagiaire dévoué mais maladroit: Raoul. Si les numéros de Figaro sont bien rodés, les bêtises de Raoul peuvent elles aussi provoquer des surprises!…et quand les objets décident de n’en faire qu’à leurs têtes il faudra des trésors d’habileté aux artistes pour sauver le spectacle!…",
   tech_file: "",
@@ -66,7 +66,7 @@ Spectacle.create!(
   title: "Faut k'ça pousse !",
   public: "Tout public",
   length: "55",
-  poster: "http://www.etincellebouillasse.fr/wp-content/uploads/2017/04/affiche-faut-k-%C3%A7a-pousse.jpg",
+  poster: "https://res.cloudinary.com/doriang/image/upload/v1654681135/Etincelle/Affiches/affiche-faut-k-%C3%A7a-pousse_peeezj.jpg",
   description: "Raoul Nitrate sème du blé, puis, en attendant que ça pousse, nomme chaque spectateur parrain et marraine d’un grain.",
   full_description: "Raoul Nitrate sème du blé, puis, en attendant que ça pousse, nomme chaque spectateur parrain et marraine d’un grain. Le public devient son champs et partage avec Raoul les inquiétudes, les surprises et les joies d’une année de culture : les intempéries, les limaces, les finances et les contraintes administratives. Le tout en musique et en clowneries!…",
   tech_file: "",
@@ -77,10 +77,10 @@ Spectacle.create!(
   title: "Eddy Chandeleur (et sa maman)",
   public: "Tout public",
   length: "75 min",
-  poster: "http://www.etincellebouillasse.fr/wp-content/uploads/2017/10/affiche-eddy.jpg",
+  poster: "https://res.cloudinary.com/doriang/image/upload/v1654681135/Etincelle/Affiches/affiche-eddy_n17tku.jpg",
   description: "Moi, Jacqueline Dutilleul, je suis très fière de vous présenter mon fils: »EDDY CHANDELEUR » qui commence sa grande tournée internationale comme chanteur. Pour le moment il n’a pas encore eu d’engagements mais je suis sûre que son talent, ainsi que sa présence hypnotique le conduiront rapidement au devant de la scène.",
   full_description: "Moi, Jacqueline Dutilleul, je suis très fière de vous présenter mon fils: »EDDY CHANDELEUR » qui commence sa grande tournée internationale comme chanteur. Pour le moment il n’a pas encore eu d’engagements mais je suis sûre que son talent, ainsi que sa présence hypnotique le conduiront rapidement au devant de la scène. Modestement, je l’accompagne comme agent, habilleuse, danseuse et même éventuellement choriste. Par ailleurs, je veille à ce qu’il interprète un répertoire FRANCOPHONE connu et apprécié de tous tel que les jolies chansons de Madame Berthe Sylva ou de Monsieur Ray Ventura. mais ce sacripan ne voit que par les américains (comme ce vaurien d’Elvis Presley) ou des anglais dont le nom m’échappe!….C’est donc un tour de chant varié, émaillé de quelques conflits de générations que nous risquons de vous proposer….",
-  tech_file: "http://www.etincellebouillasse.fr/wp-content/uploads/2017/10/dossier-pr%C3%A9sentation-Eddy-Chandeleur.pdf",
+  tech_file: "https://res.cloudinary.com/doriang/image/upload/v1654680866/Etincelle/pdf/dossier-pr%C3%A9sentation-Eddy-Chandeleur_compressed_g1mh9i.pdf",
   older: false,
   video_url: "https://www.youtube.com/watch?v=Aa_BoDCVzVY"
 )
@@ -92,7 +92,7 @@ Spectacle.create!(
   poster: "",
   description: "Flop vous explique comment sauver la planète: c’est pas compliqué: faut que ça soye propre!…mais il faut aussi cohabiter hors, Pipa Siflore, elle, fraternise avec les ordures.",
   full_description: "Flop vous explique comment sauver la planète: c’est pas compliqué: faut que ça soye propre!…mais il faut aussi cohabiter hors, Pipa Siflore, elle, fraternise avec les ordures. Elle a pour doudou un vieux sac plastique et pas question de le jeter à la poubelle. De cette rencontre autour d’une poubelle va naître une relation musclée, tonitruante, désespérée, et qui sait? Une conscience écologique?!…",
-  tech_file: "http://www.etincellebouillasse.fr/wp-content/uploads/2017/04/Dossier-de-pre%C4%97sentation-Propre.pdf",
+  tech_file: "https://res.cloudinary.com/doriang/image/upload/v1654680866/Etincelle/pdf/Dossier-de-pre%C4%97sentation-Propre_compressed_i0ao0h.pdf",
   older: false
 )
 
@@ -100,10 +100,10 @@ Spectacle.create!(
   title: "MuZik",
   public: "Tout public",
   length: "55 min",
-  poster: "",
+  poster: "https://res.cloudinary.com/doriang/image/upload/v1654681135/Etincelle/Affiches/affiche_Muzik_jrptmf.jpg",
   description: "Madame Coco, célèbre professeur de Musique (et aussi un peu coach en développement personnel), donne une conférence sur l’équilibre et l’harmonie grâce aux mélodies.",
   full_description: "Madame Coco, célèbre professeur de Musique (et aussi un peu coach en développement personnel), donne une conférence sur l’équilibre et l’harmonie grâce aux mélodies. Raoul, le concierge de la salle où elle doit se produire n’a pas été prévenu qu’une intervention avait lieu et n’a qu’une envie : fermer. Avec ou sans son consentement, Madame Coco va profiter de sa présence pour illustrer son propos. Tout est musique, et même Raoul est mélomane!…",
-  tech_file: "http://www.etincellebouillasse.fr/wp-content/uploads/2017/04/dossier-presentation-musique.pdf",
+  tech_file: "https://res.cloudinary.com/doriang/image/upload/v1654680866/Etincelle/pdf/dossier-presentation-musique_compressed_ve95bc.pdf",
   older: false
 )
 
