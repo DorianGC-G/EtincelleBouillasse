@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  skip_before_action :authenticate_user!, only: :index
   def index
     events = Event.all.reverse
     @local_events = events.select{|e| e.at_home}
@@ -16,6 +17,16 @@ class EventsController < ApplicationController
     redirect_to events_path
   end
 
+  def edit
+    @event = Event.find(params[:id])
+  end
+
+  def update
+    @event = Event.find(params[:id])
+    @event.update(event_params)
+    redirect_to events_path
+  end
+
   def destroy
     @event = Event.find(params[:id])
     @event.destroy
@@ -25,6 +36,6 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    params.require(:event).permit(:title, :location, :public, :length, :description, :poster_url, :date, :reservation_link, :at_home)
+    params.require(:event).permit(:title, :location, :public, :length, :description, :poster_url, :date, :reservation_link, :at_home, :price)
   end
 end

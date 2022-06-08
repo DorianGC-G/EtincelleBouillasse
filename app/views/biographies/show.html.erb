@@ -2,7 +2,8 @@
   <div class="biography-content">
     <h2><%= @biographie.name %> <%= @biographie.clown_name? ? "/ #{@biographie.clown_name}" : "" %></h2>
     <% if current_user %>
-      <%= link_to "supprimer", biography_path(@biographie), data: { turbo_method: :delete }, class: :button %>
+      <%= link_to "Modifier", edit_biographie_path(@biographie), class: :button %>
+      <%= link_to "Supprimer", biography_path(@biographie), data: { turbo_method: :delete, turbo_confirm: "Ce clown sera supprimé. Confirmer ?" }, class: :button %>
     <% end %>
     <div class="main-content">
       <%= @biographie.biography %>

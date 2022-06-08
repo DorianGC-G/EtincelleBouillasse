@@ -10,7 +10,8 @@
       <span><b>Tarif: <%= event.price %></b></span>
       <div class="clickable">
         <% if current_user %>
-          <%= link_to "Supprimer", event_path(event), data: { turbo_method: :delete }, class: :button %>
+          <%= link_to "Modifier", edit_event_path(event), class: :button %>
+          <%= link_to "Supprimer", event_path(event), data: { turbo_method: :delete, turbo_confirm: "Cet événement sera supprimé. Confirmer ?" }, class: :button %>
         <% end %>
         <%= link_to 'Réserver', event.reservation_link.present? ? event.reservation_link : contact_path, html_options={ target: "blank" , class: :button} %>
       </div>

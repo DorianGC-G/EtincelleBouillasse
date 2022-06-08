@@ -1,4 +1,6 @@
 class BiographiesController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index, :show]
+  
   def index
     @biographies = Biographie.all
   end
@@ -15,6 +17,17 @@ class BiographiesController < ApplicationController
     @biographie = Biographie.new(biographie_params)
     @biographie.gallery = gallery()
     @biographie.save
+    redirect_to biographies_path
+  end
+
+  def edit
+    @biographie = Biographie.find(params[:id])
+  end
+
+  def update
+    @biographie = Biographie.find(params[:id])
+    @biographie.gallery += gallery()
+    @biographie.update(biographie_params)
     redirect_to biographies_path
   end
 

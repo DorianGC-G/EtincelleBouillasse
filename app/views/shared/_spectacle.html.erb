@@ -4,13 +4,14 @@
   </div>
   <div class='content'>
     <h3><%= spectacle.title %></h3>
-    <span class='spectacle-info'><%= spectacle.public %> - <%= spectacle.length %> min</span>
+    <span class='spectacle-info'><%= spectacle.public %> - <%= spectacle.length %></span>
     <p class='short-description'><%= spectacle.description %></p>
   </div>
   <div class="decoration"></div>
   <div class="clickable">
     <% if current_user %>
-      <%= link_to "Supprimer", spectacle_path(spectacle), data: { turbo_method: :delete }, class: :button %>
+      <%= link_to "Modifier", edit_spectacle_path(spectacle), class: :button %>
+      <%= link_to "Supprimer", spectacle_path(spectacle), data: { turbo_method: :delete, turbo_confirm: "Ce spectacle sera supprimé. Confirmer ?" }, class: :button %>
     <% end %>
     <%= link_to 'En savoir plus', spectacle_path(spectacle), class: :button %>
   </div>
