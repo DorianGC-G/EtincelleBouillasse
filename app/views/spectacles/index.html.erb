@@ -12,7 +12,7 @@
       <% @current_spectacles.sort_by(&:created_at).reverse.each do |spectacle| %>
         <%= render 'shared/spectacle', spectacle: spectacle %>
       <% end %>
-      <h2>C'était un autre temps...</h2>
+      <h2>Antérieur</h2>
       <% @older_spectacles.each do |spectacle| %>
         <%= render 'shared/spectacle', spectacle: spectacle %>
       <% end %>
@@ -35,12 +35,26 @@
         Étincelle Bouillasse crée des interventions thématiques sur mesure pour les entreprises,  associations ou d’autres structures. le clown a cette posture  particulière qui permet au public à la fois de s’identifier au sujet  traité, et de rire de ses propres travers: présentés ici de façon  caricaturale et outrancière.Une manière insolite et humoristique de  rendre le thème d’une réunion captivant ou encore de lancer un débat.
       </p>
       <div class="gallery">
-        <img src="https://res.cloudinary.com/doriang/image/upload/v1654087418/Etincelle/Galleries/Pages%20statiques/Sketches%20%C3%A0%20la%20carte/DSC02154_nhlpvk.jpg">
-        <img src="https://res.cloudinary.com/doriang/image/upload/v1654087418/Etincelle/Galleries/Pages%20statiques/Sketches%20%C3%A0%20la%20carte/IMG-20210520-WA0018_dlbmca.jpg">
-        <img src="https://res.cloudinary.com/doriang/image/upload/v1654087418/Etincelle/Galleries/Pages%20statiques/Sketches%20%C3%A0%20la%20carte/mechantes_iauxca.jpg">
-        <img src="https://res.cloudinary.com/doriang/image/upload/v1654087418/Etincelle/Galleries/Pages%20statiques/Sketches%20%C3%A0%20la%20carte/diable_cf0og1.jpg">
-        <div class="embed-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/_ycHRIZqZsM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="image-gallery">
+          <img src="https://res.cloudinary.com/doriang/image/upload/v1654087418/Etincelle/Galleries/Pages%20statiques/Sketches%20%C3%A0%20la%20carte/DSC02154_nhlpvk.jpg">
+          <span>Intervention sur le cannabis</span>
+        </div>
+        <div class="image-gallery">
+          <img src="https://res.cloudinary.com/doriang/image/upload/v1654087418/Etincelle/Galleries/Pages%20statiques/Sketches%20%C3%A0%20la%20carte/IMG-20210520-WA0018_dlbmca.jpg">
+          <span>Téléphones portables et écrans</span>
+        </div>
+        <div class="image-gallery">
+          <img src="https://res.cloudinary.com/doriang/image/upload/v1654087418/Etincelle/Galleries/Pages%20statiques/Sketches%20%C3%A0%20la%20carte/mechantes_iauxca.jpg">
+          <span>Risques d'accidents domestiques</span>
+        </div>
+        <div class="image-gallery">
+          <img src="https://res.cloudinary.com/doriang/image/upload/v1654087418/Etincelle/Galleries/Pages%20statiques/Sketches%20%C3%A0%20la%20carte/diable_cf0og1.jpg">
+          <span>Cancer du sein</span>
+        </div>
+        <div class="image-gallery">
+          <div class="embed-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_ycHRIZqZsM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
