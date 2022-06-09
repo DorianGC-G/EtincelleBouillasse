@@ -1,0 +1,10 @@
+.form-gallery {
+  .gallery-preview {
+    display: flex;
+    align-items: center;
+    img {
+      max-width: 150px;
+      margin: 5px;
+    }
+  }
+}

@@ -31,12 +31,19 @@
     <%= f.label "Description complète (celle qui apparaîtra sur la page du spectacle) :" %><br />
     <%= f.rich_text_area :full_description, class: "trix-content-edit" %><br /><br />
 
-    <%= f.label "Liens vers les images:"%><br />
-    <%= f.fields_for :gallery do |g| %>
-      <%= f.label "Image 1:" %><br />
-      <%= g.text_field "image_1" %><br /><br />
-      <a class="button" data-forms-target="btn" data-action="click->forms#addSpectacleImageInput">Ajouter une image</a><br /><br />
-    <% end %>
+    <div class="form-gallery" data-forms-target="gallery">
+      <div class="gallery-preview" data-forms-target="preview">
+        <% @spectacle.gallery.each do |image| %>
+          <img src=<%= image %>>
+        <% end %>
+      </div>
+      <%= f.label "Liens vers les images:"%><br />
+      <%= f.fields_for :gallery do |g| %>
+        <%= f.label "Image 1:" %><br />
+        <%= g.text_field "image_1" %><br /><br />
+        <a class="button" data-forms-target="btn" data-action="click->forms#addSpectacleImageInput">Ajouter une image</a><br /><br />
+      <% end %>
+    </div>
 
     <%= f.submit "Mettre à jour le spectacle", class: "trix-button" %>
   <% end %>
