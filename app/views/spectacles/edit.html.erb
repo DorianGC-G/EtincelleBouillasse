@@ -14,10 +14,16 @@
     <%= f.url_field :poster %><br /><br />
 
     <%= f.label "Lien vers le PDF du spectacle: " %><br />
-    <%= f.url_field :tech_file, required: true %><br /><br />
+    <%= f.url_field :tech_file %><br /><br />
 
     <%= f.label "Lien vers le teaser / la vidéo du spectacle: " %><br />
     <%= f.url_field :video_url %><br /><br />
+
+    <%= f.label "Le spectacle est-il un spectacle d'Etincelle ?" %><br />
+    <%= f.label "Etincelle" %>
+    <%= f.radio_button :other_company, false %><br />
+    <%= f.label "Autre compagnie" %>
+    <%= f.radio_button :other_company, true %><br /><br />
 
     <%= f.label "Le spectacle est-il toujours à l'affiche ?" %><br />
     <%= f.label "A l'affiche" %>
@@ -29,7 +35,7 @@
     <%= f.text_area :description, size: "80x5", required: true, minlength: 80, maxlength: 350 %><br /><br />
 
     <%= f.label "Description complète (celle qui apparaîtra sur la page du spectacle) :" %><br />
-    <%= f.rich_text_area :full_description, class: "trix-content-edit" %><br /><br />
+    <%= f.rich_text_area :full_description, class: "trix-content-edit", required: true %><br /><br />
 
     <div class="form-gallery" data-forms-target="gallery">
       <div class="gallery-preview" data-forms-target="preview">

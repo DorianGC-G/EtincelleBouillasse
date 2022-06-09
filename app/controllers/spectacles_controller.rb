@@ -3,8 +3,9 @@ class SpectaclesController < ApplicationController
 
   def index
     spectacles = Spectacle.all
-    @current_spectacles = spectacles.select{ |s| !s.older }
+    @current_spectacles = spectacles.select{ |s| !s.older && !s.other_company}
     @older_spectacles = spectacles.select{ |s| s.older }
+    @other_company_spectacles = spectacles.reject{ |s| !s.other_company }
   end
 
   def show
@@ -42,7 +43,7 @@ class SpectaclesController < ApplicationController
   private
 
   def spectacle_params
-    params.require(:spectacle).permit(:title, :public, :length, :poster, :tech_file, :description, :full_description)
+    params.require(:spectacle).permit(:title, :public, :length, :poster, :tech_file, :description, :full_description, :other_company)
   end
 
   def gallery

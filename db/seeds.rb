@@ -12,8 +12,8 @@ Spectacle.create!(
   poster: "",
   description: "Le duo de jazz acoustique Franck et Juliette, composé de deux musiciens professionnels, propose depuis 2002 un répertoire feutré et coloré.",
   full_description: "Le duo de jazz acoustique Franck et Juliette, composé de deux musiciens professionnels, propose depuis 2002 un répertoire feutré et coloré. Composé d’un violoniste et d’une guitariste, le duo reprend des standards du jazz. Du Jazz Swing (Count Basie Duke Ellington) en passant par le Be-Bop (Charlie Parker, Thélonious Monk) la bossa Nova (Antonio Carlos Jobim) le manouche ou encore des airs de chanson française (Edith Piaf, Georges Brassens, Serge Gainsbourg) « Franck et Juliette » se réapproprie ces standards avec générosité. Avec un répertoire de plus de trois heures, le duo propose ses prestations pour différentes formules: concerts, Vins d’honneurs, cocktails etc…",
-  tech_file: "",
-  older: false
+  older: false,
+  other_company: true
 )
 
 Spectacle.create!(
@@ -23,8 +23,8 @@ Spectacle.create!(
   poster: "https://res.cloudinary.com/doriang/image/upload/v1654681136/Etincelle/Affiches/VieDeGrenier_recto-01_yitko5.jpg",
   description: "Montez au grenier et découvrez les trésors cachés! Les livres sont des initiations aux voyages imaginaires et aux rêves.",
   full_description: "Montez au grenier et découvrez les trésors cachés! Les livres sont des initiations aux voyages imaginaires et aux rêves. Ce spectacle mêlant livre pop-up géants, théâtre et ombres vous propose de plonger dans les livres et d’embarquer à bord d’une pirogue à côté d’un indien, de flâner dans un château mystérieux ou des chevaliers s’affrontent pour une princesse, ou encore de traverser la jungle pour y découvrir ses animaux sauvages…",
-  tech_file: "",
-  older: false
+  older: false,
+  other_company: true
 )
 
 Spectacle.create!(
@@ -58,7 +58,6 @@ Spectacle.create!(
   poster: "https://res.cloudinary.com/doriang/image/upload/v1654681136/Etincelle/Affiches/19424559_10213532875575063_1520399756809090791_n_nnlwsr.jpg",
   description: "Le célèbre grand magicien Figaro vous présente son célèbre grand cabaret magique accompagné de son stagiaire dévoué mais maladroit: Raoul.",
   full_description: "Le célèbre grand magicien Figaro vous présente son célèbre grand cabaret magique accompagné de son stagiaire dévoué mais maladroit: Raoul. Si les numéros de Figaro sont bien rodés, les bêtises de Raoul peuvent elles aussi provoquer des surprises!…et quand les objets décident de n’en faire qu’à leurs têtes il faudra des trésors d’habileté aux artistes pour sauver le spectacle!…",
-  tech_file: "",
   older: false
 )
 
@@ -69,7 +68,6 @@ Spectacle.create!(
   poster: "https://res.cloudinary.com/doriang/image/upload/v1654681135/Etincelle/Affiches/affiche-faut-k-%C3%A7a-pousse_peeezj.jpg",
   description: "Raoul Nitrate sème du blé, puis, en attendant que ça pousse, nomme chaque spectateur parrain et marraine d’un grain.",
   full_description: "Raoul Nitrate sème du blé, puis, en attendant que ça pousse, nomme chaque spectateur parrain et marraine d’un grain. Le public devient son champs et partage avec Raoul les inquiétudes, les surprises et les joies d’une année de culture : les intempéries, les limaces, les finances et les contraintes administratives. Le tout en musique et en clowneries!…",
-  tech_file: "",
   older: false
 )
 
@@ -114,7 +112,6 @@ Spectacle.create!(
   poster: "",
   description: "Le duo de jazz acoustique Franck et Juliette, composé de deux musiciens professionnels, propose depuis 2002 un répertoire feutré et coloré.",
   full_description: "Le duo de jazz acoustique Franck et Juliette, composé de deux musiciens professionnels, propose depuis 2002 un répertoire feutré et coloré. Composé d’un violoniste et d’une guitariste, le duo reprend des standards du jazz. Du Jazz Swing (Count Basie Duke Ellington) en passant par le Be-Bop (Charlie Parker, Thélonious Monk) la bossa Nova (Antonio Carlos Jobim) le manouche ou encore des airs de chanson française (Edith Piaf, Georges Brassens, Serge Gainsbourg) « Franck et Juliette » se réapproprie ces standards avec générosité. Avec un répertoire de plus de trois heures, le duo propose ses prestations pour différentes formules: concerts, Vins d’honneurs, cocktails etc…",
-  tech_file: "",
   older: true
 )
 
@@ -125,7 +122,6 @@ Spectacle.create!(
   poster: "",
   description: "Le duo de jazz acoustique Franck et Juliette, composé de deux musiciens professionnels, propose depuis 2002 un répertoire feutré et coloré.",
   full_description: "Le duo de jazz acoustique Franck et Juliette, composé de deux musiciens professionnels, propose depuis 2002 un répertoire feutré et coloré. Composé d’un violoniste et d’une guitariste, le duo reprend des standards du jazz. Du Jazz Swing (Count Basie Duke Ellington) en passant par le Be-Bop (Charlie Parker, Thélonious Monk) la bossa Nova (Antonio Carlos Jobim) le manouche ou encore des airs de chanson française (Edith Piaf, Georges Brassens, Serge Gainsbourg) « Franck et Juliette » se réapproprie ces standards avec générosité. Avec un répertoire de plus de trois heures, le duo propose ses prestations pour différentes formules: concerts, Vins d’honneurs, cocktails etc…",
-  tech_file: "",
   older: true
 )
 
@@ -212,7 +208,8 @@ event1 = Event.create!(
   description: "Pour bien commencer l'année, voici le premier stage découverte pour se familiariser avec l'univers du clown. Une journée pour se planter, manquer, rater... Mais avec panache!",
   date: DateTime.parse("27/02/2022"),
   price: "50€",
-  at_home: true
+  at_home: true,
+  hour: "15h"
 )
 
 event2 = Event.create!(
@@ -223,7 +220,8 @@ event2 = Event.create!(
   description: "A partir des théories les plus improbables sur les femmes, deux clownes enfourchent leur balais de sorcières pour démonter ces idées fumeuses et partir à la recherche de ces femmes absentes de l'Histoire.",
   date: DateTime.parse("05/02/2022"),
   price: "12€ plein tarif, 8€ tarif réduit",
-  at_home: true
+  at_home: true,
+  hour: "15h"
 )
 
 event3 = Event.create!(
@@ -234,7 +232,8 @@ event3 = Event.create!(
   description: "Sale journée pour Jacqueline. En qualité de présidente de l'association \"Les amis de la Culture\", elle a organisé un concert mais le piano n'a pas été livré. Les catastrophes n'arrivant jamais seules, ce n'est pas UN mais DEUX concertistes qu'elle a convoqués...",
   date: DateTime.parse("18/02/2022"),
   price: "Gratuit sur réservation",
-  at_home: false
+  at_home: false,
+  hour: "15h"
 )
 
 event4 = Event.create!(
@@ -246,7 +245,8 @@ event4 = Event.create!(
   date: DateTime.parse("27/02/2022"),
   reservation_link: "https://enkiea.fr/epa/evenements.html",
   price: "15€",
-  at_home: false
+  at_home: false,
+  hour: "15h"
 )
 
 event5 = Event.create!(
@@ -258,7 +258,8 @@ event5 = Event.create!(
   date: DateTime.parse("13/03/2022"),
   reservation_link: "https://enkiea.fr/epa/evenements.html",
   price: "12€ plein tarif, 8€ tarif réduit, 35€ pass famille",
-  at_home: true
+  at_home: true,
+  hour: "15h"
 )
 
 puts "done"
