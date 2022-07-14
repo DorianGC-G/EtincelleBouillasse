@@ -19,6 +19,9 @@
       <% @older_spectacles.each do |spectacle| %>
         <%= render 'shared/spectacle', spectacle: spectacle %>
       <% end %>
+      <% @older_other_company_spectacles.each do |spectacle| %>
+        <%= render 'shared/spectacle', spectacle: spectacle %>
+      <% end %>
     </div>
     <div class='spectacles-content-wrapper' data-spectacle-nav-target="deambulationWrapper">
       <p class="main-content">

@@ -4,8 +4,9 @@ class SpectaclesController < ApplicationController
   def index
     spectacles = Spectacle.all
     @current_spectacles = spectacles.select{ |s| !s.older && !s.other_company}
-    @older_spectacles = spectacles.select{ |s| s.older }
-    @other_company_spectacles = spectacles.reject{ |s| !s.other_company }
+    @older_spectacles = spectacles.select{ |s| s.older && !s.other_company }
+    @other_company_spectacles = spectacles.select{ |s| !s.older && s.other_company }
+    @older_other_company_spectacles = spectacles.select{ |s| s.older && s.other_company}
   end
 
   def show
