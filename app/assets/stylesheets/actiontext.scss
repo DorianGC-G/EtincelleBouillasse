@@ -36,6 +36,9 @@
   color: var(--white);
   font-size: 18px;
   line-height: 24px;
+  a {
+    color: var(--lightPurple)
+  }
 }
 
 .trix-content-edit {

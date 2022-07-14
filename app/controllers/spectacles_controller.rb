@@ -44,7 +44,7 @@ class SpectaclesController < ApplicationController
   private
 
   def spectacle_params
-    params.require(:spectacle).permit(:title, :public, :length, :poster, :tech_file, :description, :full_description, :other_company)
+    params.require(:spectacle).permit(:title, :public, :length, :poster, :tech_file, :description, :full_description, :other_company, :older, :gallery, :video_url)
   end
 
   def gallery

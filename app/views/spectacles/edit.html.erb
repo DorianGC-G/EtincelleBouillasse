@@ -10,7 +10,7 @@
     <%= f.label "Durée:" %><br />
     <%= f.text_field :length, required: true %><br /><br />
 
-    <%= f.label "Lien vers l'affiche:" %><br />
+    <%= f.label "Lien vers l'affiche (format A4 ou vertical):" %><br />
     <%= f.url_field :poster %><br /><br />
 
     <%= f.label "Lien vers le PDF du spectacle: " %><br />
@@ -21,7 +21,7 @@
 
     <%= f.label "Le spectacle est-il un spectacle d'Etincelle ?" %><br />
     <%= f.label "Etincelle" %>
-    <%= f.radio_button :other_company, false %><br />
+    <%= f.radio_button :other_company, false, required: true %><br />
     <%= f.label "Autre compagnie" %>
     <%= f.radio_button :other_company, true %><br /><br />
 
