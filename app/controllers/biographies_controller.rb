@@ -2,7 +2,7 @@ class BiographiesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   
   def index
-    @biographies = Biographie.all
+    @biographies = Biographie.all.order(:order)
   end
 
   def show

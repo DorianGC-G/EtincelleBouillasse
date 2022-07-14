@@ -1,8 +1,3 @@
-puts "resetting"
-Spectacle.destroy_all
-Biographie.destroy_all
-Event.destroy_all
-
 puts "creating spectacles"
 
 Spectacle.create!(
