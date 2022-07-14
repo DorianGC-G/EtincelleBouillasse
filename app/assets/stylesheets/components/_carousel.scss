@@ -20,6 +20,10 @@ ul.slides {
   padding: 0;
   overflow: hidden;
   list-style: none;
+  @media screen and (max-width: 730px) {
+    height: 300px;
+  }
+  
 }
 
 .slides * {
@@ -50,6 +54,9 @@ ul.slides input {
   background-size: cover;
   background-position: center;
   transition: all .7s ease-in-out;
+  @media screen and (max-width: 730px) {
+    background-position: center !important;
+  }
 }
 
 .carousel-controls {
