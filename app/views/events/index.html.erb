@@ -8,12 +8,12 @@
     <%= link_to "Créer un nouvel évènement", (new_event_path), class: :button, id: :new_event %>
   <% end %>
   <div class='events-wrapper active' data-agenda-nav-target="homeWrapper"> 
-    <% @local_events.each do |event| %>
+    <% @local_events.sort_by(&:date).each do |event| %>
       <%= render "shared/event", event: event%>
     <% end %>
   </div>
   <div class='events-wrapper' data-agenda-nav-target="outsideWrapper"> 
-    <% @outside_events.each do |event| %>
+    <% @outside_events.sort_by(&:date).each do |event| %>
       <%= render "shared/event", event: event%>
     <% end %>
   </div>
